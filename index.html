@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Culture & Pulse Sports Intelligence</title>
+<meta name="description" content="Data-driven sports analysis, power rankings, predictions, and player insights across NFL, NBA, WNBA, College Football, College Basketball, and MLB.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
+    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
+    <span class="ticker-item"><span class="dot">●</span> MODEL RECORD <b>68-29</b> <span class="up">68.8%</span></span>
+    <span class="ticker-item"><span class="dot">●</span> TRENDING PROP <b>A'JA WILSON</b> O24.5 PTS — 8/10</span>
+    <span class="ticker-item"><span class="dot">●</span> NBA OFFSEASON — DRAFT INTELLIGENCE LIVE</span>
+    <span class="ticker-item"><span class="dot">●</span> ROI THIS SEASON <span class="up">+38.9%</span></span>
+    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
+    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
+    <span class="ticker-item"><span class="dot">●</span> MODEL RECORD <b>68-29</b> <span class="up">68.8%</span></span>
+    <span class="ticker-item"><span class="dot">●</span> TRENDING PROP <b>A'JA WILSON</b> O24.5 PTS — 8/10</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="#" class="logo">CULTURE <span class="amp">&</span> PULSE<span class="sub">SPORTS INTELLIGENCE</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#" aria-haspopup="true">Sports</a>
+        <ul class="dropdown">
+          <li><a href="#">NFL</a></li>
+          <li><a href="#">NBA</a></li>
+          <li><a href="wnba.html">WNBA</a></li>
+          <li><a href="#">MLB</a></li>
+          <li><a href="#">College Football</a></li>
+          <li><a href="#">College Basketball</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Rankings</a></li>
+      <li><a href="#">Players</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#" class="nav-cta">Today's Research</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="eyebrow">Culture Meets Competition</p>
+    <h1 class="hero-title">Sports<br><span class="line2">Intelligence</span></h1>
+    <p class="hero-sub">Power rankings, predictions, and player research built from a live analytics engine — not a hot take. See what the data says before you watch the game.</p>
+    <p class="hero-dna">Where culture, competition, and data collide.</p>
+    <p class="hero-sports-line">Covering <span>NFL · NBA · WNBA · College Football · College Basketball · MLB</span></p>
+    <div class="hero-ctas">
+      <a href="#research" class="btn btn-primary">View Today's Intelligence</a>
+      <a href="#rankings" class="btn btn-ghost">Explore Rankings</a>
+    </div>
+  </section>
+
+  <section id="pulse">
+    <div class="wrap">
+      <p class="pulse-label">The Pulse — What's Moving Today</p>
+      <ul class="pulse-list">
+        <li><span class="pulse-tag">🏀 Court Pulse</span> Minnesota Lynx climb to #1 after a defensive surge over their last five games.</li>
+        <li><span class="pulse-tag">📊 Model Pulse</span> A'ja Wilson averaging 29.4 PPG across her last five outings.</li>
+        <li><span class="pulse-tag">🏛 Culture Pulse</span> Early HBCU camp buzz: a top-10 preseason projection is taking shape in the SWAC.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gotd">
+    <div class="wrap">
+      <div class="gotd-card">
+        <div>
+          <p class="gotd-tag">Featured Intelligence · WNBA</p>
+          <div class="matchup-row">
+            <div class="team-block">
+              <span class="team-name">Las Vegas Aces</span>
+              <span class="team-record">15-7 · Power Rank #5</span>
+            </div>
+            <span class="vs">AT</span>
+            <div class="team-block" style="text-align:right;">
+              <span class="team-name">NY Liberty</span>
+              <span class="team-record">14-9 · Power Rank #4</span>
+            </div>
+          </div>
+          <div class="win-prob-bar">
+            <span style="width:42%;background:var(--text-faint);"></span>
+            <span style="width:58%;background:var(--gold);"></span>
+          </div>
+          <div class="win-prob-labels">
+            <span>Aces <b>42%</b></span>
+            <span>Liberty <b>58%</b></span>
+          </div>
+          <div class="factors">
+            <p class="factors-label">Why the Model Leans Liberty</p>
+            <ul class="factors">
+              <li>Liberty have won 6 of their last 7, averaging 91.4 PPG over that stretch.</li>
+              <li>Aces' point differential (+3.0) is the lowest of any team above .500 — close-game dependent.</li>
+              <li>Model projects a faster-than-average pace, favoring Liberty's guard rotation.</li>
+            </ul>
+          </div>
+          <a href="game.html?game=aces-liberty" class="section-link" style="display:inline-block;margin-top:18px;">Read Full Research →</a>
+        </div>
+        <div class="ring-block">
+          <div class="ring-wrap">
+            <svg width="168" height="168" viewBox="0 0 168 168">
+              <circle class="ring-bg" cx="84" cy="84" r="74"></circle>
+              <circle class="ring-fg" cx="84" cy="84" r="74" stroke-dasharray="465" stroke-dashoffset="121"></circle>
+            </svg>
+            <div class="ring-center">
+              <span class="ring-num">74%</span>
+              <span class="ring-label">Confidence</span>
+            </div>
+          </div>
+          <p class="ring-caption">Model Edge<br>Liberty −5</p>
+          <span class="edge-pill">+6.4% Edge</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pillars">
+    <div class="wrap">
+      <div class="pillars">
+        <div class="pillar">
+          <p class="pillar-icon">01 / RANK</p>
+          <h3>Power Rankings</h3>
+          <p>Elo, strength of schedule, recent form, and efficiency — combined into one score, validated against actual results every week.</p>
+          <a href="#" class="pillar-link">See the rankings →</a>
+        </div>
+        <div class="pillar">
+          <p class="pillar-icon">02 / PLAY</p>
+          <h3>Predictions</h3>
+          <p>Win probabilities and spreads built from the same engine that powers the rankings — with the reasoning shown, not hidden.</p>
+          <a href="#" class="pillar-link">Today's picks →</a>
+        </div>
+        <div class="pillar">
+          <p class="pillar-icon">03 / PROPS</p>
+          <h3>Player Props</h3>
+          <p>Hit rates, splits, and matchup context for the props that matter — coming soon as the player data layer expands.</p>
+          <a href="#" class="pillar-link">Get notified →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rankings">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Top <span class="gold">Power Rankings</span></h2>
+        <a href="#" class="section-link">Full WNBA Rankings →</a>
+      </div>
+      <div class="rank-list">
+        <div class="rank-row top">
+          <span class="rank-num">01</span>
+          <div class="rank-team">
+            <span class="rank-team-name">Minnesota Lynx</span>
+            <span class="rank-team-meta">15-5 · Elo 1722.9 · WNBA</span>
+          </div>
+          <span class="rank-trend up">▲ Rising</span>
+          <div class="rank-score">92.1<small>Power</small></div>
+        </div>
+        <div class="rank-row">
+          <span class="rank-num">02</span>
+          <div class="rank-team">
+            <span class="rank-team-name">Golden State Valkyries</span>
+            <span class="rank-team-meta">14-7 · Elo 1718.9 · WNBA</span>
+          </div>
+          <span class="rank-trend down">▼ Steady</span>
+          <div class="rank-score">90.4<small>Power</small></div>
+        </div>
+        <div class="rank-row">
+          <span class="rank-num">03</span>
+          <div class="rank-team">
+            <span class="rank-team-name">Dallas Wings</span>
+            <span class="rank-team-meta">15-8 · Elo 1662.3 · WNBA</span>
+          </div>
+          <span class="rank-trend up">▲ Rising</span>
+          <div class="rank-score">78.6<small>Power</small></div>
+        </div>
+        <div class="rank-row">
+          <span class="rank-num">04</span>
+          <div class="rank-team">
+            <span class="rank-team-name">New York Liberty</span>
+            <span class="rank-team-meta">14-9 · Elo 1635.9 · WNBA</span>
+          </div>
+          <span class="rank-trend up">▲ Rising</span>
+          <div class="rank-score">75.2<small>Power</small></div>
+        </div>
+        <div class="rank-row">
+          <span class="rank-num">05</span>
+          <div class="rank-team">
+            <span class="rank-team-name">Las Vegas Aces</span>
+            <span class="rank-team-meta">15-7 · Elo 1594.9 · WNBA</span>
+          </div>
+          <span class="rank-trend down">▼ Falling</span>
+          <div class="rank-score">70.8<small>Power</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sports">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Choose a <span class="gold">Sport</span></h2>
+      </div>
+      <div class="sport-grid">
+        <a class="sport-tile" href="wnba.html"><div class="abbr">WNBA</div><div class="full">Women's Basketball</div><div class="status live">● In Season</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">NBA</div><div class="full">Basketball</div><div class="status">Offseason</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">NFL</div><div class="full">Football</div><div class="status">Preseason Soon</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">CFB</div><div class="full">College Football</div><div class="status">Preseason Soon</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">CBB</div><div class="full">College Basketball</div><div class="status">Offseason</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">MLB</div><div class="full">Baseball</div><div class="status live">● In Season</div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="performance">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Engine <span class="gold">Preview</span></h2>
+        <a href="#" class="section-link">Full Accuracy Report →</a>
+      </div>
+      <p class="perf-caveat">Engine components — live performance tracking coming as results accumulate.</p>
+      <div class="perf-strip">
+        <div class="perf-cell">
+          <div class="perf-num">10K+</div>
+          <div class="perf-label">Simulation Runs</div>
+        </div>
+        <div class="perf-cell">
+          <div class="perf-num">6</div>
+          <div class="perf-label">Sports Covered</div>
+        </div>
+        <div class="perf-cell">
+          <div class="perf-num">50+</div>
+          <div class="perf-label">Metrics Evaluated</div>
+        </div>
+        <div class="perf-cell">
+          <div class="perf-num">Live</div>
+          <div class="perf-label">Prediction Tracking</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Latest <span class="gold">Research</span></h2>
+        <a href="#" class="section-link">All Research →</a>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <p class="research-tag">WNBA · Game Brief</p>
+          <p class="research-title">Why the Liberty's pace is the real story tonight</p>
+          <p class="research-excerpt">New York has won six of seven while pushing tempo — and Las Vegas hasn't defended fast starts well in its last five games. Here's what the numbers say about tonight's total.</p>
+          <p class="research-meta">Today · WNBA Intelligence</p>
+        </div>
+        <div class="research-card">
+          <p class="research-tag">Power Rankings</p>
+          <p class="research-title">The case for Golden State over the Lynx</p>
+          <p class="research-excerpt">Nearly tied on Elo, but the Valkyries have played the league's hardest schedule. A closer look at why.</p>
+          <p class="research-meta">This Week</p>
+        </div>
+        <div class="research-card hbcu-card">
+          <p class="research-tag">HBCU Intelligence</p>
+          <p class="research-title">Jackson State enters camp on the rise</p>
+          <ul class="hbcu-factors">
+            <li>Returning production up sharply from last season</li>
+            <li>Top-15 recruiting class in the SWAC</li>
+            <li>Two Power 4 transfers addressing the O-line</li>
+          </ul>
+          <p class="research-meta">Coming Soon · SWAC & MEAC Coverage</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">CULTURE <span class="amp">&</span> PULSE</a>
+      <p class="footer-tag">Sports intelligence, Black history, and culture — built by Drew Webber. Data-driven analysis you can actually read the reasoning behind.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#">Power Rankings</a>
+        <a href="#">Predictions</a>
+        <a href="#">Player Props</a>
+        <a href="#">Research</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sports</h4>
+        <a href="wnba.html">WNBA</a>
+        <a href="#">NBA</a>
+        <a href="#">NFL</a>
+        <a href="#">HBCU</a>
+      </div>
+      <div class="footer-col">
+        <h4>Culture & Pulse</h4>
+        <a href="#">Media Site</a>
+        <a href="#">Telegram</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Culture & Pulse Sports Intelligence</span>
+    <span>Data for entertainment purposes. Not financial or betting advice.</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // mobile dropdown tap-to-open for Sports
+  if (window.matchMedia('(max-width: 900px)').matches) {
+    document.querySelectorAll('.has-dropdown > a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        a.closest('.has-dropdown').classList.toggle('open');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

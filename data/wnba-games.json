@@ -1,0 +1,108 @@
+{
+  "sport": "basketball",
+  "league": "wnba",
+  "entity": "game",
+  "updated": "2026-07-12",
+  "note": "Placeholder data. Every field carries source+confidence, same convention as the rest of the site — no game-prediction pipeline is wired to the site as of 2026-07-12. Scoped to 3 games per the agreed vertical slice — do not expand to the full slate until this is proven.",
+  "games": [
+    {
+      "slug": "aces-liberty",
+      "home_team": "New York Liberty",
+      "home_slug": "new-york-liberty",
+      "away_team": "Las Vegas Aces",
+      "away_slug": "las-vegas-aces",
+      "tipoff": "7:00 PM ET",
+      "projection": {
+        "home_win_prob": { "value": 58, "source": "placeholder", "confidence": "low" },
+        "away_win_prob": { "value": 42, "source": "placeholder", "confidence": "low" },
+        "model_confidence": "Medium"
+      },
+      "comparison": {
+        "power_score": { "home": 75.2, "away": 70.8 },
+        "elo": { "home": 1635.9, "away": 1594.9 },
+        "form": { "home": 74.8, "away": 87.9 },
+        "defense": { "home": 73, "away": 68 },
+        "schedule_strength": { "home": 58, "away": 68 }
+      },
+      "edges": [
+        { "title": "Liberty Half-Court Offense", "why": "Liberty ranks higher in offensive efficiency and ball movement in half-court sets.", "confidence": "Medium" },
+        { "title": "Aces' Point Differential Risk", "why": "Aces' +3.0 season point differential is the lowest of any team above .500 — closer to their record than their underlying quality suggests.", "confidence": "Medium" }
+      ],
+      "featured_props": ["aja-wilson", "breanna-stewart", "sabrina-ionescu"],
+      "model_pick": {
+        "pick": "New York Liberty ML",
+        "probability": 58,
+        "fair_odds": "-138",
+        "market_odds": "-110",
+        "value_pct": 8,
+        "confidence": "Medium"
+      }
+    },
+    {
+      "slug": "valkyries-dream",
+      "home_team": "Atlanta Dream",
+      "home_slug": "atlanta-dream",
+      "away_team": "Golden State Valkyries",
+      "away_slug": "golden-state-valkyries",
+      "tipoff": "7:30 PM ET",
+      "projection": {
+        "home_win_prob": { "value": 37, "source": "placeholder", "confidence": "low" },
+        "away_win_prob": { "value": 63, "source": "placeholder", "confidence": "low" },
+        "model_confidence": "Medium"
+      },
+      "comparison": {
+        "power_score": { "home": 62.7, "away": 90.4 },
+        "elo": { "home": 1571.9, "away": 1718.9 },
+        "form": { "home": 73.2, "away": 85.2 },
+        "defense": { "home": 71, "away": 82 },
+        "schedule_strength": { "home": 64, "away": 100 }
+      },
+      "edges": [
+        { "title": "Valkyries' Schedule-Adjusted Strength", "why": "Golden State's Elo is elite even before accounting for having played the league's toughest schedule to date.", "confidence": "High" },
+        { "title": "Dream's Home Defense Trending Up", "why": "Atlanta's defensive rotations have improved over their last 5 games, a mild counterweight to the talent gap.", "confidence": "Low" }
+      ],
+      "featured_props": [],
+      "model_pick": {
+        "pick": "Golden State Valkyries ML",
+        "probability": 63,
+        "fair_odds": "-170",
+        "market_odds": "-145",
+        "value_pct": 5,
+        "confidence": "Medium"
+      }
+    },
+    {
+      "slug": "wings-lynx",
+      "home_team": "Minnesota Lynx",
+      "home_slug": "minnesota-lynx",
+      "away_team": "Dallas Wings",
+      "away_slug": "dallas-wings",
+      "tipoff": "8:00 PM ET",
+      "projection": {
+        "home_win_prob": { "value": 71, "source": "placeholder", "confidence": "low" },
+        "away_win_prob": { "value": 29, "source": "placeholder", "confidence": "low" },
+        "model_confidence": "High"
+      },
+      "comparison": {
+        "power_score": { "home": 92.1, "away": 78.6 },
+        "elo": { "home": 1722.9, "away": 1662.3 },
+        "form": { "home": 100.0, "away": 82.5 },
+        "defense": { "home": 96, "away": 70 },
+        "schedule_strength": { "home": 90, "away": 62 }
+      },
+      "edges": [
+        { "title": "Lynx Defensive Efficiency", "why": "Minnesota's defensive rating is the best in the league — a significant advantage against Dallas' pace-driven offense.", "confidence": "High" },
+        { "title": "Wings' Rebounding Edge", "why": "Dallas out-rebounds most opponents, one of the few underlying areas working in their favor tonight.", "confidence": "Medium" }
+      ],
+      "featured_props": ["napheesa-collier"],
+      "model_pick": {
+        "pick": "Minnesota Lynx ML",
+        "probability": 71,
+        "fair_odds": "-245",
+        "market_odds": "-210",
+        "value_pct": 4,
+        "confidence": "High"
+      }
+    }
+  ]
+}

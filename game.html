@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Game Research | Culture & Pulse Sports Intelligence</title>
+<meta name="description" content="Matchup intelligence, team comparison, edges, and model picks — built from a live analytics engine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-header{padding:64px 24px 40px;max-width:1180px;margin:0 auto;border-bottom:1px solid var(--border);}
+  .breadcrumb{font-family:var(--label);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);margin-bottom:22px;}
+  .breadcrumb a{color:var(--text-faint);transition:color .15s ease;}
+  .breadcrumb a:hover{color:var(--gold-bright);}
+  .matchup-title-row{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;text-align:center;}
+  .matchup-title-row h1{font-family:var(--display);font-size:clamp(32px,5.5vw,52px);letter-spacing:0.01em;text-transform:uppercase;line-height:1;}
+  .matchup-title-row a{transition:color .15s ease;}
+  .matchup-title-row a:hover{color:var(--gold-bright);}
+  .matchup-vs{font-family:var(--label);font-size:13px;color:var(--text-faint);letter-spacing:0.1em;}
+  .tipoff-line{text-align:center;font-family:var(--label);font-size:12.5px;color:var(--text-faint);letter-spacing:0.04em;margin-top:16px;}
+
+  .conf-flag{
+    font-size:9px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-faint);
+    border:1px solid var(--border);border-radius:10px;padding:2px 6px;margin-left:5px;cursor:help;display:inline-block;
+  }
+
+  /* Projection card */
+  .proj-card{
+    background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:36px;
+    display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;
+  }
+  .proj-label{font-family:var(--label);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);}
+  .win-prob-row{display:flex;align-items:center;gap:28px;}
+  .win-prob-team{font-family:var(--label);font-size:14px;color:var(--text-dim);}
+  .win-prob-team b{display:block;font-family:var(--display);font-size:38px;color:var(--gold-bright);margin-top:4px;}
+  .win-prob-team.favorite b{color:var(--gold);}
+  .proj-bar{width:100%;max-width:420px;height:10px;border-radius:5px;overflow:hidden;display:flex;background:var(--bg-elevated);}
+  .proj-bar span{display:block;height:100%;}
+
+  /* Comparison table */
+  .cmp-table{width:100%;border-collapse:collapse;margin-top:24px;}
+  .cmp-table th{font-family:var(--label);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-faint);padding:12px 16px;text-align:center;border-bottom:1px solid var(--border-bright);font-weight:500;}
+  .cmp-table th:first-child{text-align:left;}
+  .cmp-table td{padding:14px 16px;border-bottom:1px solid var(--border);text-align:center;font-family:var(--label);font-size:14px;color:var(--text-dim);}
+  .cmp-table td:first-child{text-align:left;color:var(--text-faint);font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;}
+  .cmp-table td.win{color:var(--gold-bright);font-weight:600;}
+
+  /* Edges */
+  .edge-card{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:22px 26px;margin-bottom:14px;}
+  .edge-title-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+  .edge-title{font-family:var(--display);font-size:20px;letter-spacing:0.01em;}
+  .edge-conf{font-family:var(--label);font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;padding:4px 12px;border-radius:20px;border:1px solid var(--border-bright);color:var(--text-dim);}
+  .edge-conf.high{color:var(--win);border-color:rgba(63,174,92,0.3);background:rgba(63,174,92,0.08);}
+  .edge-why{font-size:13.5px;color:var(--text-dim);line-height:1.6;}
+
+  /* Featured props */
+  .prop-mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .prop-mini{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:20px;transition:border-color .18s ease;}
+  .prop-mini:hover{border-color:var(--border-bright);}
+  .prop-mini-name{font-family:var(--label);font-weight:600;font-size:14px;margin-bottom:4px;}
+  .prop-mini-meta{font-family:var(--label);font-size:11px;color:var(--text-faint);margin-bottom:12px;}
+  .prop-mini-stat{display:flex;justify-content:space-between;font-size:12.5px;color:var(--text-dim);padding:4px 0;}
+  .prop-mini-stat b{color:var(--gold-bright);}
+
+  /* Model pick card */
+  .pick-card{
+    background:linear-gradient(180deg, rgba(207,181,59,0.06), var(--bg-card) 45%);
+    border:1px solid var(--border-bright);border-radius:6px;padding:32px;
+  }
+  .pick-label{font-family:var(--label);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .pick-title{font-family:var(--display);font-size:32px;letter-spacing:0.01em;margin-bottom:20px;}
+  .pick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:700px){.pick-grid{grid-template-columns:repeat(2,1fr);}}
+  .pick-cell{background:var(--bg-elevated);border-radius:4px;padding:16px;text-align:center;}
+  .pick-cell-num{font-family:var(--display);font-size:22px;color:var(--text);}
+  .pick-cell-label{font-family:var(--label);font-size:9.5px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-faint);margin-top:4px;}
+
+  .load-state{text-align:center;padding:80px 24px;color:var(--text-faint);font-family:var(--label);letter-spacing:0.04em;}
+</style>
+</head>
+<body>
+
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
+    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
+    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
+  </div>
+</div>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">CULTURE <span class="amp">&</span> PULSE<span class="sub">SPORTS INTELLIGENCE</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#" aria-haspopup="true">Sports</a>
+        <ul class="dropdown">
+          <li><a href="#">NFL</a></li>
+          <li><a href="#">NBA</a></li>
+          <li><a href="wnba.html">WNBA</a></li>
+          <li><a href="#">MLB</a></li>
+          <li><a href="#">College Football</a></li>
+          <li><a href="#">College Basketball</a></li>
+        </ul>
+      </li>
+      <li><a href="wnba.html#rankings">Rankings</a></li>
+      <li><a href="wnba.html#players">Players</a></li>
+      <li><a href="wnba.html#research">Research</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#" class="nav-cta">Today's Research</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div id="content">
+    <div class="load-state">Loading game research…</div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">CULTURE <span class="amp">&</span> PULSE</a>
+      <p class="footer-tag">Sports intelligence, Black history, and culture — built by Drew Webber. Data-driven analysis you can actually read the reasoning behind.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="wnba.html#rankings">Power Rankings</a>
+        <a href="#">Predictions</a>
+        <a href="#">Player Props</a>
+        <a href="#">Research</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sports</h4>
+        <a href="wnba.html">WNBA</a>
+        <a href="#">NBA</a>
+        <a href="#">NFL</a>
+        <a href="#">HBCU</a>
+      </div>
+      <div class="footer-col">
+        <h4>Culture & Pulse</h4>
+        <a href="#">Media Site</a>
+        <a href="#">Telegram</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </div>
+  <p class="intel-badge" id="intelBadge">
+    <span><b>C&amp;P Intelligence Layer</b></span>
+    <span>Model Version: <b>v1.0</b></span>
+    <span>Data Updated: <b id="intelUpdated">—</b></span>
+  </p>
+  <div class="footer-bottom">
+    <span>© 2026 Culture & Pulse Sports Intelligence</span>
+    <span>Data for entertainment purposes. Not financial or betting advice.</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const isOpen = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+  if (window.matchMedia('(max-width: 900px)').matches) {
+    document.querySelectorAll('.has-dropdown > a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        a.closest('.has-dropdown').classList.toggle('open');
+      });
+    });
+  }
+
+  // Game Research Page — reads ?game=<slug>, fetches data/wnba-games.json
+  // and cross-references data/wnba-players.json for featured props.
+  // This is the page that connects Team + Player into one matchup view —
+  // the loop the whole vertical slice was built to prove.
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('game') || 'aces-liberty';
+
+  const confFlag = (level) => `<span class="conf-flag" title="Placeholder — no prediction pipeline feeding this yet">${level || 'low'} confidence</span>`;
+
+  Promise.all([
+    fetch('data/wnba-games.json').then(r => { if (!r.ok) throw new Error('Games data not found'); return r.json(); }),
+    fetch('data/wnba-players.json').then(r => { if (!r.ok) throw new Error('Players data not found'); return r.json(); })
+  ]).then(([gamesData, playersData]) => {
+    const badge = document.getElementById('intelUpdated');
+    if (badge) badge.textContent = gamesData.updated || '—';
+    const game = gamesData.games.find(g => g.slug === slug);
+    const content = document.getElementById('content');
+
+    if (!game) {
+      content.innerHTML = `<div class="load-state">No game found for "${slug}". <a href="wnba.html" style="color:var(--gold-bright);">Back to WNBA Hub →</a></div>`;
+      return;
+    }
+
+    document.getElementById('pageTitle').textContent = `${game.away_team} @ ${game.home_team} | Culture & Pulse Sports Intelligence`;
+
+    const cmp = game.comparison;
+    const cmpRow = (label, key, higherIsBetter = true) => {
+      const h = cmp[key].home, a = cmp[key].away;
+      const homeWins = higherIsBetter ? h >= a : h <= a;
+      return `<tr>
+        <td>${label}</td>
+        <td class="${homeWins ? 'win' : ''}">${h}</td>
+        <td class="${!homeWins ? 'win' : ''}">${a}</td>
+      </tr>`;
+    };
+
+    const featuredProps = (game.featured_props || [])
+      .map(slug => playersData.players.find(p => p.slug === slug))
+      .filter(Boolean);
+
+    const propMini = (player) => {
+      const p = player.props[0];
+      return `
+        <a class="prop-mini" href="player.html?player=${player.slug}" style="display:block;">
+          <div class="prop-mini-name">${player.name}</div>
+          <div class="prop-mini-meta">${p.label} · Line ${p.line}</div>
+          <div class="prop-mini-stat"><span>Last 10</span><b>${p.hit_last10}</b></div>
+          <div class="prop-mini-stat"><span>Model Proj.</span><b>${p.model_projection}</b></div>
+          <div class="prop-mini-stat"><span>Edge</span><b>+${p.edge}</b></div>
+        </a>`;
+    };
+
+    const p = game.projection;
+
+    content.innerHTML = `
+      <div class="page-header">
+        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="wnba.html">WNBA</a> / Game Research</p>
+        <div class="matchup-title-row">
+          <a href="team.html?team=${game.away_slug}"><h1>${game.away_team}</h1></a>
+          <span class="matchup-vs">AT</span>
+          <a href="team.html?team=${game.home_slug}"><h1>${game.home_team}</h1></a>
+        </div>
+        <p class="tipoff-line">${game.tipoff} · WNBA</p>
+      </div>
+
+      <section>
+        <div class="wrap">
+          <div class="proj-card">
+            <p class="proj-label">Culture & Pulse Projection ${confFlag('low')}</p>
+            <div class="win-prob-row">
+              <div class="win-prob-team ${p.away_win_prob.value < p.home_win_prob.value ? '' : 'favorite'}">${game.away_team}<b>${p.away_win_prob.value}%</b></div>
+              <div class="win-prob-team ${p.home_win_prob.value >= p.away_win_prob.value ? 'favorite' : ''}">${game.home_team}<b>${p.home_win_prob.value}%</b></div>
+            </div>
+            <div class="proj-bar">
+              <span style="width:${p.away_win_prob.value}%;background:var(--text-faint);"></span>
+              <span style="width:${p.home_win_prob.value}%;background:var(--gold);"></span>
+            </div>
+            <p style="font-family:var(--label);font-size:11.5px;color:var(--text-faint);">Model Confidence: ${p.model_confidence}</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head"><h2 class="section-title">Team <span class="gold">Comparison</span></h2></div>
+          <table class="cmp-table">
+            <thead><tr><th></th><th>${game.home_team}</th><th>${game.away_team}</th></tr></thead>
+            <tbody>
+              ${cmpRow('Power Score', 'power_score')}
+              ${cmpRow('Elo', 'elo')}
+              ${cmpRow('Recent Form', 'form')}
+              ${cmpRow('Defense', 'defense')}
+              ${cmpRow('Schedule Strength', 'schedule_strength')}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <div class="section-head"><h2 class="section-title">Matchup <span class="gold">Edges</span></h2></div>
+          ${game.edges.map(e => `
+            <div class="edge-card">
+              <div class="edge-title-row">
+                <span class="edge-title">${e.title}</span>
+                <span class="edge-conf ${e.confidence === 'High' ? 'high' : ''}">${e.confidence} Confidence</span>
+              </div>
+              <p class="edge-why">${e.why}</p>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
+      ${featuredProps.length ? `
+      <section>
+        <div class="wrap">
+          <div class="section-head"><h2 class="section-title">Featured <span class="gold">Props</span></h2></div>
+          <div class="prop-mini-grid">${featuredProps.map(propMini).join('')}</div>
+        </div>
+      </section>` : ''}
+
+      <section>
+        <div class="wrap">
+          <div class="section-head"><h2 class="section-title">Model <span class="gold">Pick</span></h2></div>
+          <div class="pick-card">
+            <p class="pick-label">Model Pick ${confFlag('low')}</p>
+            <p class="pick-title">${game.model_pick.pick}</p>
+            <div class="pick-grid">
+              <div class="pick-cell"><div class="pick-cell-num">${game.model_pick.probability}%</div><div class="pick-cell-label">Probability</div></div>
+              <div class="pick-cell"><div class="pick-cell-num">${game.model_pick.fair_odds}</div><div class="pick-cell-label">Fair Odds</div></div>
+              <div class="pick-cell"><div class="pick-cell-num">${game.model_pick.market_odds}</div><div class="pick-cell-label">Market Odds</div></div>
+              <div class="pick-cell"><div class="pick-cell-num">+${game.model_pick.value_pct}%</div><div class="pick-cell-label">Value</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }).catch(err => {
+    document.getElementById('content').innerHTML = `<div class="load-state">Couldn't load game research — ${err.message}</div>`;
+    console.error(err);
+  });
+</script>
+
+</body>
+</html>

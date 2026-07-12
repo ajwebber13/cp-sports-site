@@ -1,0 +1,124 @@
+{
+  "sport": "basketball",
+  "league": "wnba",
+  "entity": "player",
+  "updated": "2026-07-12",
+  "note": "Placeholder data. Every stat carries source+confidence, same convention as wnba-rankings.json — none of this is real yet; no player game-log pipeline is wired to the site as of 2026-07-12. Scoped to 5 players per the agreed vertical slice (Wilson, Clark, Stewart, Collier, Ionescu) — do not expand to full rosters until this slice is proven.",
+  "players": [
+    {
+      "slug": "aja-wilson",
+      "name": "A'ja Wilson",
+      "team": "Las Vegas Aces",
+      "team_slug": "las-vegas-aces",
+      "position": "Forward",
+      "status": "Active",
+      "power_rating": { "value": 96.4, "source": "placeholder", "confidence": "low" },
+      "season": {
+        "ppg": { "value": 27.8, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 10.4, "source": "placeholder", "confidence": "low" },
+        "bpg": { "value": 2.8, "source": "placeholder", "confidence": "low" }
+      },
+      "last10": {
+        "ppg": { "value": 29.4, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 9.8, "source": "placeholder", "confidence": "low" },
+        "fg_pct": { "value": 56, "source": "placeholder", "confidence": "low" }
+      },
+      "props": [
+        { "label": "Points", "line": 24.5, "hit_last10": "8/10", "hit_season_pct": 72, "hit_vs_opponent_pct": 75, "model_projection": 27.1, "edge": 2.6, "confidence": 82, "source": "placeholder" },
+        { "label": "Rebounds", "line": 9.5, "hit_last10": "6/10", "hit_season_pct": 58, "hit_vs_opponent_pct": 61, "model_projection": 9.9, "edge": 0.4, "confidence": 54, "source": "placeholder" }
+      ]
+    },
+    {
+      "slug": "caitlin-clark",
+      "name": "Caitlin Clark",
+      "team": "Indiana Fever",
+      "team_slug": "indiana-fever",
+      "position": "Guard",
+      "status": "Active",
+      "power_rating": { "value": 88.1, "source": "placeholder", "confidence": "low" },
+      "season": {
+        "ppg": { "value": 19.6, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 5.4, "source": "placeholder", "confidence": "low" },
+        "bpg": { "value": 0.7, "source": "placeholder", "confidence": "low" }
+      },
+      "last10": {
+        "ppg": { "value": 21.8, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 5.9, "source": "placeholder", "confidence": "low" },
+        "fg_pct": { "value": 44, "source": "placeholder", "confidence": "low" }
+      },
+      "props": [
+        { "label": "Points", "line": 18.5, "hit_last10": "7/10", "hit_season_pct": 61, "hit_vs_opponent_pct": 68, "model_projection": 20.4, "edge": 1.9, "confidence": 70, "source": "placeholder" },
+        { "label": "Assists", "line": 6.5, "hit_last10": "9/10", "hit_season_pct": 77, "hit_vs_opponent_pct": 80, "model_projection": 7.6, "edge": 1.1, "confidence": 79, "source": "placeholder" }
+      ]
+    },
+    {
+      "slug": "breanna-stewart",
+      "name": "Breanna Stewart",
+      "team": "New York Liberty",
+      "team_slug": "new-york-liberty",
+      "position": "Forward",
+      "status": "Active",
+      "power_rating": { "value": 92.7, "source": "placeholder", "confidence": "low" },
+      "season": {
+        "ppg": { "value": 22.4, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 8.9, "source": "placeholder", "confidence": "low" },
+        "bpg": { "value": 1.6, "source": "placeholder", "confidence": "low" }
+      },
+      "last10": {
+        "ppg": { "value": 24.1, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 9.2, "source": "placeholder", "confidence": "low" },
+        "fg_pct": { "value": 51, "source": "placeholder", "confidence": "low" }
+      },
+      "props": [
+        { "label": "Points", "line": 21.5, "hit_last10": "7/10", "hit_season_pct": 64, "hit_vs_opponent_pct": 71, "model_projection": 23.6, "edge": 2.1, "confidence": 74, "source": "placeholder" },
+        { "label": "Rebounds", "line": 8.5, "hit_last10": "6/10", "hit_season_pct": 55, "hit_vs_opponent_pct": 59, "model_projection": 8.8, "edge": 0.3, "confidence": 51, "source": "placeholder" }
+      ]
+    },
+    {
+      "slug": "napheesa-collier",
+      "name": "Napheesa Collier",
+      "team": "Minnesota Lynx",
+      "team_slug": "minnesota-lynx",
+      "position": "Forward",
+      "status": "Active",
+      "power_rating": { "value": 94.8, "source": "placeholder", "confidence": "low" },
+      "season": {
+        "ppg": { "value": 23.9, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 9.1, "source": "placeholder", "confidence": "low" },
+        "bpg": { "value": 1.4, "source": "placeholder", "confidence": "low" }
+      },
+      "last10": {
+        "ppg": { "value": 25.6, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 9.7, "source": "placeholder", "confidence": "low" },
+        "fg_pct": { "value": 53, "source": "placeholder", "confidence": "low" }
+      },
+      "props": [
+        { "label": "Points", "line": 22.5, "hit_last10": "8/10", "hit_season_pct": 69, "hit_vs_opponent_pct": 73, "model_projection": 25.0, "edge": 2.5, "confidence": 80, "source": "placeholder" },
+        { "label": "Rebounds", "line": 8.5, "hit_last10": "7/10", "hit_season_pct": 63, "hit_vs_opponent_pct": 66, "model_projection": 9.2, "edge": 0.7, "confidence": 65, "source": "placeholder" }
+      ]
+    },
+    {
+      "slug": "sabrina-ionescu",
+      "name": "Sabrina Ionescu",
+      "team": "New York Liberty",
+      "team_slug": "new-york-liberty",
+      "position": "Guard",
+      "status": "Active",
+      "power_rating": { "value": 89.5, "source": "placeholder", "confidence": "low" },
+      "season": {
+        "ppg": { "value": 18.2, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 4.6, "source": "placeholder", "confidence": "low" },
+        "bpg": { "value": 0.3, "source": "placeholder", "confidence": "low" }
+      },
+      "last10": {
+        "ppg": { "value": 19.9, "source": "placeholder", "confidence": "low" },
+        "rpg": { "value": 4.9, "source": "placeholder", "confidence": "low" },
+        "fg_pct": { "value": 47, "source": "placeholder", "confidence": "low" }
+      },
+      "props": [
+        { "label": "Points", "line": 17.5, "hit_last10": "6/10", "hit_season_pct": 57, "hit_vs_opponent_pct": 62, "model_projection": 19.1, "edge": 1.6, "confidence": 66, "source": "placeholder" },
+        { "label": "3-Pointers Made", "line": 3.5, "hit_last10": "7/10", "hit_season_pct": 60, "hit_vs_opponent_pct": 64, "model_projection": 3.9, "edge": 0.4, "confidence": 58, "source": "placeholder" }
+      ]
+    }
+  ]
+}

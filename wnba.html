@@ -1,0 +1,380 @@
+Drew, this is the point where I would stop adding pages and test the system.
+
+The reason: you now have something much more important than a collection of HTML files. You have a working intelligence graph.
+
+The flow:
+
+Homepage
+   ↓
+WNBA Hub
+   ↓
+Game Research
+   ↓              ↓
+Team Intelligence   Player Intelligence
+   ↓              ↓
+Rankings Engine    Prop Research
+
+That is the first real version of the Culture & Pulse Sports Intelligence product.
+
+What I would test before building anything else
+1. Data integrity test
+
+Open each page and verify the JSON relationships.
+
+Test URLs:
+wnba.html
+
+Verify:
+
+Rankings load
+Team links work
+No undefined values
+team.html?team=minnesota-lynx
+
+Verify:
+
+Elo appears correctly
+Form appears correctly
+Confidence labels show
+Placeholder metrics are visually different
+player.html?player=aja-wilson
+
+Verify:
+
+Player loads
+Team link works
+Props render
+Confidence badges appear
+game.html?game=aces-liberty
+
+Verify:
+
+Both teams load
+Comparison table works
+Player props link correctly
+Model card renders
+2. Check the "honesty layer"
+
+This is actually your biggest differentiator.
+
+Make sure the UI clearly separates:
+
+Real engine data
+
+Example:
+
+Elo Rating
+1722.9
+
+Source:
+ranking_engine
+
+Confidence:
+HIGH
+
+from:
+
+Placeholder data
+
+Example:
+
+Offensive Rating
+84
+
+Source:
+placeholder
+
+Confidence:
+LOW
+
+Because once this grows, this protects the credibility of Culture & Pulse.
+
+3. Test mobile view
+
+This is important because your audience will probably discover this through:
+
+TikTok
+Instagram
+X
+mobile browser
+
+Check:
+
+Team comparison tables
+Prop cards
+Model pick card
+Rankings table
+
+A desktop-first analytics site can look amazing and still fail on phones.
+
+4. Add one small thing before expanding
+
+I would add a tiny footer badge on every intelligence page:
+
+C&P Intelligence Layer
+
+Data Source:
+Ranking Engine
+Model Version:
+v1.0
+
+Last Updated:
+July 12, 2026
+
+Why?
+
+Because later when you have:
+
+v1.1 model
+injury adjustments
+weather model
+Monte Carlo simulations
+EPA models
+recruiting data
+
+you can show the evolution.
+
+The next build after testing should NOT be another page
+
+The next milestone should be:
+
+Connect the frontend to the engine
+
+Right now:
+
+JSON
+ ↓
+HTML
+
+The future:
+
+Python Engine
+      ↓
+ FastAPI
+      ↓
+ JSON API
+      ↓
+ Website
+
+Which matches the architecture you already planned:
+
+app/
+model/
+services/
+database/
+dashboard/
+
+Then:
+
+ranking_engine.py
+
+feeds:
+
+Team rankings
+Team pages
+Game research
+Predictions
+The next feature I would prioritize after API connection:
+Game Research → "Why The Model Likes This"
+
+Something like:
+
+MODEL EXPLANATION
+
+The model favors New York because:
+
+✓ +7.2 Elo advantage
+✓ Better half court efficiency
+✓ Aces allowing 35% three-point attempts
+✓ Liberty top-5 rebounding matchup
+
+Confidence:
+Medium
+
+That is where you separate from sportsbooks.
+
+Most sites say:
+
+"Take Liberty ML."
+
+You say:
+
+"Here are the 4 reasons the model believes Liberty has an edge."
+
+That fits the Culture & Pulse brand much better.
+
+So my recommendation:
+
+Push this version. Test the entire click path. Do not build anything else until you know the vertical slice works.
+
+You have enough now to put a real person in front of it and ask:
+
+"Does this feel like sports intelligence?"
+
+Because the answer to that determines the next 6 months of development.
+
+is this the point where i upload this in github and view the site what i've built? 
+
+Yes. This is exactly the point where you should push it to GitHub and view it live.
+
+You have reached the first meaningful milestone: the site is no longer just individual files — it is a connected prototype. You need to see it behaving as a real website before adding more features.
+
+Since you already have GitHub Pages established for your media site, the workflow should be:
+
+1. Check your files locally first
+
+Your repo should look like:
+
+cp-sports-site/
+│
+├── index.html
+├── wnba.html
+├── team.html
+├── player.html
+├── game.html
+├── styles.css
+│
+└── data/
+    ├── wnba-rankings.json
+    ├── wnba-players.json
+    └── wnba-games.json
+
+The important thing:
+
+The data folder must be pushed.
+
+A lot of first deployments fail because the HTML uploads but the JSON files do not.
+
+2. Test locally before pushing
+
+From the repo folder, run a simple local server.
+
+If you have Python:
+
+python -m http.server 8000
+
+Then open:
+
+http://localhost:8000
+
+Do not just double-click index.html.
+
+Why?
+
+Because your pages use:
+
+fetch('data/wnba-rankings.json')
+
+Browsers block local file fetches sometimes.
+
+The server simulates GitHub Pages.
+
+3. Click through the entire intelligence chain
+
+Your test path:
+
+Homepage
+index.html
+
+↓
+
+WNBA Intelligence
+wnba.html
+
+↓
+
+Team
+team.html?team=minnesota-lynx
+
+↓
+
+Player
+player.html?player=aja-wilson
+
+↓
+
+Game Research
+game.html?game=aces-liberty
+
+You are looking for:
+
+blank sections
+JSON errors
+broken links
+mobile layout problems
+4. Commit and push
+
+Something like:
+
+git status
+
+You should see:
+
+modified:
+ index.html
+ wnba.html
+
+new files:
+ team.html
+ player.html
+ game.html
+ data/wnba-rankings.json
+ data/wnba-players.json
+ data/wnba-games.json
+
+Then:
+
+git add .
+git commit -m "Build WNBA intelligence vertical slice"
+git push origin main
+5. Turn on GitHub Pages
+
+In GitHub:
+
+Repo
+ ↓
+Settings
+ ↓
+Pages
+ ↓
+Deploy from branch
+ ↓
+main
+ ↓
+/root
+ ↓
+Save
+
+Your site will become something like:
+
+https://yourusername.github.io/cp-sports-site/
+What you should expect when it goes live
+
+The first thing you'll probably notice:
+
+"This looks like a real sports product now."
+
+Because the difference is:
+
+Before:
+
+"I have a sports model."
+
+Now:
+
+"I have a public intelligence platform powered by a sports model."
+
+That's a huge difference.
+
+One thing I would do before announcing or sharing it publicly:
+
+Take screenshots of:
+
+WNBA Rankings page
+Minnesota Lynx Team Intelligence page
+A'ja Wilson Player Intelligence page
+Aces vs Liberty Game Research page
+
+Those four screenshots become your first portfolio/demo assets for Culture & Pulse Sports Intelligence.
+
+This is the first version worth showing people. You built enough to validate the concept.
