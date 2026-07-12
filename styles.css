@@ -410,7 +410,7 @@
     background:var(--bg-card);border:1px solid var(--border);border-radius:6px;overflow:hidden;
   }
   .rank-row{
-    display:grid;grid-template-columns:56px 1fr auto auto;align-items:center;
+    display:grid;grid-template-columns:56px 36px 1fr auto auto;align-items:center;
     gap:18px;padding:18px 24px;border-top:1px solid var(--border);
   }
   .rank-row:first-child{border-top:none;}
@@ -539,3 +539,47 @@
   display:flex;gap:18px;flex-wrap:wrap;
 }
 .intel-badge b{color:var(--text-dim);font-weight:500;}
+
+/* ---------- Badges (team crests / player avatars, initials-based) ---------- */
+.badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--display);letter-spacing:0.02em;color:#0a0a0a;
+  flex-shrink:0;line-height:1;
+}
+.badge-team{
+  border-radius:6px;
+}
+.badge-player{
+  border-radius:50%;
+}
+.badge-inline{
+  vertical-align:middle;margin-right:10px;
+}
+
+/* ---------- Today's Intelligence (homepage) ---------- */
+.intel-card{
+  background:var(--bg-card);border:1px solid var(--border);border-radius:6px;
+  padding:26px;margin-bottom:16px;
+}
+.intel-card-tag{
+  font-family:var(--label);font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.intel-card-tag.lock{color:var(--gold-bright);}
+.intel-card-tag.projection{color:var(--text-dim);}
+.intel-card-tag.prop{color:var(--gold);}
+.intel-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.intel-row-info{flex:1;}
+.intel-matchup{font-family:var(--label);font-weight:600;font-size:15px;}
+.intel-sub{font-family:var(--label);font-size:12px;color:var(--text-dim);margin-top:2px;}
+.intel-stat-row{display:flex;justify-content:space-between;font-family:var(--label);font-size:13px;color:var(--text-dim);padding-top:10px;border-top:1px solid var(--border);}
+.intel-stat-row b{color:var(--gold-bright);}
+.intel-tier{
+  font-family:var(--label);font-size:10.5px;letter-spacing:0.05em;text-transform:uppercase;
+  border-radius:20px;padding:4px 12px;border:1px solid var(--border-bright);
+}
+.intel-tier.high{color:var(--win);border-color:rgba(63,174,92,0.3);background:rgba(63,174,92,0.08);}
+.intel-tier.medium{color:var(--gold-bright);border-color:var(--border-bright);}
+.intel-tier.low{color:var(--text-faint);}
+.intel-caveat-line{font-family:var(--label);font-size:11px;color:var(--text-faint);font-style:italic;margin-top:10px;}
+.intel-empty{font-family:var(--label);font-size:13px;color:var(--text-faint);text-align:center;padding:24px;}

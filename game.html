@@ -161,6 +161,7 @@
   </div>
 </footer>
 
+<script src="badges.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -221,7 +222,10 @@
       const p = player.props[0];
       return `
         <a class="prop-mini" href="player.html?player=${player.slug}" style="display:block;">
-          <div class="prop-mini-name">${player.name}</div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+            ${renderPlayerBadge(player.name, 28)}
+            <div class="prop-mini-name" style="margin-bottom:0;">${player.name}</div>
+          </div>
           <div class="prop-mini-meta">${p.label} · Line ${p.line}</div>
           <div class="prop-mini-stat"><span>Last 10</span><b>${p.hit_last10}</b></div>
           <div class="prop-mini-stat"><span>Model Proj.</span><b>${p.model_projection}</b></div>
@@ -235,9 +239,9 @@
       <div class="page-header">
         <p class="breadcrumb"><a href="index.html">Home</a> / <a href="wnba.html">WNBA</a> / Game Research</p>
         <div class="matchup-title-row">
-          <a href="team.html?team=${game.away_slug}"><h1>${game.away_team}</h1></a>
+          <a href="team.html?team=${game.away_slug}" style="display:flex;align-items:center;gap:14px;">${renderTeamBadge(game.away_team, 48)}<h1>${game.away_team}</h1></a>
           <span class="matchup-vs">AT</span>
-          <a href="team.html?team=${game.home_slug}"><h1>${game.home_team}</h1></a>
+          <a href="team.html?team=${game.home_slug}" style="display:flex;align-items:center;gap:14px;">${renderTeamBadge(game.home_team, 48)}<h1>${game.home_team}</h1></a>
         </div>
         <p class="tipoff-line">${game.tipoff} · WNBA</p>
       </div>

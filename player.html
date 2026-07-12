@@ -149,6 +149,7 @@
   </div>
 </footer>
 
+<script src="badges.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -235,7 +236,10 @@
           <p class="breadcrumb"><a href="index.html">Home</a> / <a href="wnba.html">WNBA</a> / ${player.name}</p>
           <div class="player-header-row">
             <div>
-              <h1>${player.name}</h1>
+              <div style="display:flex;align-items:center;gap:16px;">
+                ${renderPlayerBadge(player.name, 56)}
+                <h1>${player.name}</h1>
+              </div>
               <p class="player-header-meta"><a href="team.html?team=${player.team_slug}">${player.team}</a> · ${player.position}</p>
               <span class="status-badge">● ${player.status}</span>
             </div>

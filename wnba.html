@@ -78,7 +78,7 @@
     display:grid;grid-template-columns:1fr 1fr;gap:36px;
   }
   @media (max-width:800px){.team-intel-card{grid-template-columns:1fr;}}
-  .team-intel-header{display:flex;align-items:baseline;gap:14px;margin-bottom:24px;}
+  .team-intel-header{display:flex;align-items:center;gap:14px;margin-bottom:24px;}
   .team-intel-header h3{font-family:var(--display);font-size:32px;letter-spacing:0.01em;}
   .team-intel-header .rk{font-family:var(--label);font-size:12px;color:var(--gold-bright);letter-spacing:0.04em;}
   .bar-row{margin-bottom:16px;}
@@ -97,7 +97,7 @@
   .player-card{
     background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:30px;
   }
-  .player-card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px;}
+  .player-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:22px;}
   .player-name{font-family:var(--display);font-size:30px;letter-spacing:0.01em;}
   .player-meta{font-family:var(--label);font-size:12px;color:var(--text-faint);letter-spacing:0.03em;margin-top:2px;}
   .player-badge{
@@ -382,6 +382,7 @@
   </div>
 </footer>
 
+<script src="badges.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -416,7 +417,7 @@
       tbody.innerHTML = data.rankings.map(t => `
         <tr>
           <td><span class="std-rank">${String(t.rank).padStart(2, '0')}</span></td>
-          <td><div class="std-team"><a class="std-team-name" href="team.html?team=${t.slug}">${t.team}</a></div></td>
+          <td><div class="std-team">${renderTeamBadge(t.team, 26)}<a class="std-team-name" href="team.html?team=${t.slug}">${t.team}</a></div></td>
           <td class="num">${t.record}</td>
           <td class="num">${t.ratings.elo.value}</td>
           <td class="num">${t.ratings.form.value}</td>
@@ -430,6 +431,26 @@
       tbody.innerHTML = `<tr><td colspan="7" class="loading-row">Couldn't load rankings — ${err.message}</td></tr>`;
       console.error(err);
     });
+
+  // Inject badges into static (non-JSON-rendered) cards — Team
+  // Intelligence header, Player Intelligence header, Tonight's Slate.
+  const teamIntelH3 = document.querySelector('.team-intel-header h3');
+  if (teamIntelH3) teamIntelH3.insertAdjacentHTML('beforebegin', renderTeamBadge(teamIntelH3.textContent.trim(), 40));
+
+  const playerCardTop = document.querySelector('.player-card-top');
+  if (playerCardTop) {
+    const nameText = playerCardTop.querySelector('.player-name').textContent.trim();
+    playerCardTop.insertAdjacentHTML('afterbegin', renderPlayerBadge(nameText, 44));
+  }
+
+  document.querySelectorAll('.slate-row').forEach(row => {
+    const teamsEl = row.querySelector('.slate-teams');
+    if (!teamsEl) return;
+    const teams = teamsEl.textContent.split(/\s+@\s+/);
+    if (teams.length === 2) {
+      row.insertAdjacentHTML('afterbegin', renderTeamBadge(teams[0].trim(), 22) + renderTeamBadge(teams[1].trim(), 22));
+    }
+  });
 </script>
 
 </body>

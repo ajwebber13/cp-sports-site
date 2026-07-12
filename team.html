@@ -152,6 +152,7 @@
   </div>
 </footer>
 
+<script src="badges.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -221,7 +222,10 @@
           <p class="breadcrumb"><a href="index.html">Home</a> / <a href="wnba.html">WNBA</a> / ${team.team}</p>
           <div class="team-header-row">
             <div>
-              <h1>${team.team}</h1>
+              <div style="display:flex;align-items:center;gap:16px;">
+                ${renderTeamBadge(team.team, 48)}
+                <h1>${team.team}</h1>
+              </div>
               <p class="team-header-meta">${team.record} · WNBA</p>
               <span class="power-rank-tag">Power Rank #${team.rank}</span>
             </div>

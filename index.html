@@ -77,6 +77,18 @@
     </div>
   </section>
 
+  <section id="todays-intel">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="section-title">Today's <span class="gold">Intelligence</span></h2>
+        <span class="page-meta" id="intelGeneratedAt"></span>
+      </div>
+      <div id="todaysIntelBody">
+        <div class="intel-empty">Loading today's intelligence…</div>
+      </div>
+    </div>
+  </section>
+
   <section id="gotd">
     <div class="wrap">
       <div class="gotd-card">
@@ -229,28 +241,17 @@
   <section id="performance">
     <div class="wrap">
       <div class="section-head">
-        <h2 class="section-title">Engine <span class="gold">Preview</span></h2>
+        <h2 class="section-title">Model <span class="gold">Performance</span></h2>
         <a href="#" class="section-link">Full Accuracy Report →</a>
       </div>
-      <p class="perf-caveat">Engine components — live performance tracking coming as results accumulate.</p>
-      <div class="perf-strip">
-        <div class="perf-cell">
-          <div class="perf-num">10K+</div>
-          <div class="perf-label">Simulation Runs</div>
-        </div>
-        <div class="perf-cell">
-          <div class="perf-num">6</div>
-          <div class="perf-label">Sports Covered</div>
-        </div>
-        <div class="perf-cell">
-          <div class="perf-num">50+</div>
-          <div class="perf-label">Metrics Evaluated</div>
-        </div>
-        <div class="perf-cell">
-          <div class="perf-num">Live</div>
-          <div class="perf-label">Prediction Tracking</div>
-        </div>
+      <p class="perf-caveat" id="perfCaveat">Loading model performance…</p>
+      <div class="perf-strip" id="perfStrip">
+        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Overall Record</div></div>
+        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Win Rate</div></div>
+        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">ROI</div></div>
+        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Graded Picks</div></div>
       </div>
+      <div class="perf-by-sport" id="perfBySport"></div>
     </div>
   </section>
 
@@ -324,6 +325,7 @@
   </div>
 </footer>
 
+<script src="badges.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -341,6 +343,140 @@
       });
     });
   }
+
+  // Model Performance — real numbers from publish_performance_summary.py
+  // (performance_tracker.py's actual queries against results/predictions).
+  // Deliberately does NOT render confidence_calibration on the public
+  // card, even though it's in the JSON — that breakdown currently shows
+  // an unresolved model-calibration issue (higher-stated-confidence picks
+  // performing worse than lower-confidence ones), and publishing that
+  // undercuts the "trust the reasoning" pitch this whole site is built
+  // on. Revisit once that's actually fixed. See performance_tracker.py's
+  // own notes on the same issue.
+  fetch('data/performance-summary.json')
+    .then(res => { if (!res.ok) throw new Error('Performance data not found (' + res.status + ')'); return res.json(); })
+    .then(data => {
+      document.getElementById('perfCaveat').textContent =
+        `Real model performance, updated ${data.updated} — Model ${data.model_version}`;
+
+      const strip = document.getElementById('perfStrip');
+      strip.innerHTML = `
+        <div class="perf-cell"><div class="perf-num">${data.overall.record.value}</div><div class="perf-label">Overall Record</div></div>
+        <div class="perf-cell"><div class="perf-num">${data.overall.win_rate_pct.value}%</div><div class="perf-label">Win Rate</div></div>
+        <div class="perf-cell"><div class="perf-num">${data.roi.roi_pct.value >= 0 ? '+' : ''}${data.roi.roi_pct.value}%</div><div class="perf-label">ROI</div></div>
+        <div class="perf-cell"><div class="perf-num">${data.overall.total_graded.value}</div><div class="perf-label">Graded Picks</div></div>
+      `;
+
+      const bySport = document.getElementById('perfBySport');
+      bySport.innerHTML = data.by_sport.map(s => `
+        <div class="perf-sport-pill">
+          <span class="perf-sport-name">${s.sport.toUpperCase()}</span>
+          <span class="perf-sport-record">${s.record.value}</span>
+          <span class="perf-sport-rate">${s.win_rate_pct.value}%</span>
+        </div>
+      `).join('');
+    })
+    .catch(err => {
+      document.getElementById('perfCaveat').textContent = `Couldn't load performance data — ${err.message}`;
+      console.error(err);
+    });
+
+  // Today's Intelligence — real Locks/Projections/Props from
+  // pick_of_the_day.py's daily-intelligence.json export (auto-pushed
+  // nightly, same file Telegram sends from). Renders whatever's
+  // actually there — zero, one, or several of each — never pads with
+  // placeholder picks on a quiet day.
+  fetch('data/daily-intelligence.json')
+    .then(res => { if (!res.ok) throw new Error('Daily intelligence not found (' + res.status + ')'); return res.json(); })
+    .then(data => {
+      const genDate = new Date(data.generated_at);
+      document.getElementById('intelGeneratedAt').textContent =
+        `Generated ${genDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} · ${data.date}`;
+
+      const tierClass = t => (t || '').toLowerCase();
+      let html = '';
+
+      data.locks.forEach(lock => {
+        const [away, home] = lock.game.split(/\s+@\s+/);
+        html += `
+          <div class="intel-card">
+            <p class="intel-card-tag lock">🔒 C&amp;P Lock · ${lock.sport.toUpperCase()}</p>
+            <div class="intel-row">
+              ${renderTeamBadge(away, 36)}
+              <div class="intel-row-info">
+                <div class="intel-matchup">${lock.game}</div>
+                <div class="intel-sub">${lock.pick} (${lock.odds})</div>
+              </div>
+              <span class="intel-tier ${tierClass(lock.confidence_tier)}">${lock.confidence_tier}</span>
+            </div>
+            <div class="intel-stat-row">
+              <span>Confidence: <b>${lock.confidence}%</b></span>
+              <span>Edge: <b>+${lock.edge_pct}%</b></span>
+            </div>
+          </div>`;
+      });
+
+      data.projections.forEach(proj => {
+        const [away, home] = proj.game.split(/\s+@\s+/);
+        html += `
+          <div class="intel-card">
+            <p class="intel-card-tag projection">🎯 Model Projection · ${proj.sport.toUpperCase()}</p>
+            <div class="intel-row">
+              ${renderTeamBadge(away, 36)}
+              <div class="intel-row-info">
+                <div class="intel-matchup">${proj.game}</div>
+                <div class="intel-sub">Model favors: ${proj.favorite}</div>
+              </div>
+              <span class="intel-tier ${tierClass(proj.confidence_tier)}">${proj.confidence_tier}</span>
+            </div>
+            <div class="intel-stat-row">
+              <span>Win Probability: <b>${proj.win_probability}%</b></span>
+            </div>
+            <p class="intel-caveat-line">No qualifying betting edge today — projection only, not a Lock.</p>
+          </div>`;
+      });
+
+      data.props.forEach(prop => {
+        html += `
+          <div class="intel-card">
+            <p class="intel-card-tag prop">🎯 Prop of the Day · ${prop.sport.toUpperCase()}</p>
+            <div class="intel-row">
+              ${renderPlayerBadge(prop.player, 36)}
+              <div class="intel-row-info">
+                <div class="intel-matchup">${prop.player}</div>
+                <div class="intel-sub">${prop.side} ${prop.stat} ${prop.line}</div>
+              </div>
+              <span class="intel-tier ${tierClass(prop.confidence_tier)}">${prop.confidence_tier}</span>
+            </div>
+            <div class="intel-stat-row">
+              <span>Historical Hit Rate: <b>${prop.historical_hit_rate_pct}%</b> (${prop.games_sampled} games)</span>
+            </div>
+          </div>`;
+      });
+
+      if (!html) {
+        html = '<div class="intel-empty">Nothing cleared the confidence bar today — check back tomorrow.</div>';
+      }
+
+      document.getElementById('todaysIntelBody').innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById('todaysIntelBody').innerHTML =
+        `<div class="intel-empty">Couldn't load today's intelligence — ${err.message}</div>`;
+      console.error(err);
+    });
+
+  // Inject badges into the static Power Rankings preview rows (these
+  // 5 rows are hand-typed HTML, not JSON-rendered, so badges get
+  // added here rather than baked into the markup — keeps the badge
+  // logic in one place instead of hardcoding SVG/initials by hand).
+  document.querySelectorAll('.rank-row').forEach(row => {
+    const rankNum = row.querySelector('.rank-num');
+    const nameEl = row.querySelector('.rank-team-name');
+    if (rankNum && nameEl) {
+      rankNum.insertAdjacentHTML('afterend', renderTeamBadge(nameEl.textContent.trim(), 32));
+    }
+  });
 </script>
 
 </body>
