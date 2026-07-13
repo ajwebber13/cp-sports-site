@@ -1,37 +1,17 @@
 {
-  "date": "2026-07-12",
-  "generated_at": "2026-07-12T23:07:35.091072+00:00",
-  "locks": [
-    {
-      "sport": "mlb",
-      "game": "Houston Astros @ Texas Rangers",
-      "pick": "Texas Rangers ML",
-      "odds": -136,
-      "confidence": 91.2,
-      "confidence_tier": "High",
-      "edge_pct": 33.6
-    }
-  ],
+  "date": "2026-07-13",
+  "generated_at": "2026-07-13T17:47:08.105367+00:00",
+  "locks": [],
   "projections": [
     {
       "sport": "wnba",
-      "game": "Chicago Sky @ Dallas Wings",
-      "favorite": "Chicago Sky ML",
-      "win_probability": 68.1,
-      "confidence_tier": "Medium"
+      "game": "Phoenix Mercury @ Minnesota Lynx",
+      "favorite": "Minnesota Lynx ML",
+      "win_probability": 76.5,
+      "confidence_tier": "Medium",
+      "confidence_grade": "B"
     }
   ],
-  "props": [
-    {
-      "sport": "mlb",
-      "player": "Jackson Chourio",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 5,
-      "confidence_tier": "High"
-    }
-  ],
-  "parlay_eligible": true
+  "props": [],
+  "parlay_eligible": false
 }
