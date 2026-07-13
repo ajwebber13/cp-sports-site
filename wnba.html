@@ -133,15 +133,7 @@
 </head>
 <body>
 
-<div class="ticker-bar" aria-hidden="true">
-  <div class="ticker-track">
-    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
-    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
-    <span class="ticker-item"><span class="dot">●</span> TRENDING PROP <b>A'JA WILSON</b> O24.5 PTS — 8/10</span>
-    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
-    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
-  </div>
-</div>
+<div id="cp-ticker"></div>
 
 <header>
   <nav>
@@ -383,6 +375,7 @@
 </footer>
 
 <script src="badges.js"></script>
+<script src="ticker.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -418,7 +411,7 @@
         <tr>
           <td><span class="std-rank">${String(t.rank).padStart(2, '0')}</span></td>
           <td><div class="std-team">${renderTeamBadge(t.team, 26)}<a class="std-team-name" href="team.html?team=${t.slug}">${t.team}</a></div></td>
-          <td class="num">${t.record}</td>
+          <td class="num">${t.record.value}</td>
           <td class="num">${t.ratings.elo.value}</td>
           <td class="num">${t.ratings.form.value}</td>
           <td class="num"><span class="std-power">${t.power_score}</span></td>

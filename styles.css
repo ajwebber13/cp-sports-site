@@ -583,3 +583,66 @@
 .intel-tier.low{color:var(--text-faint);}
 .intel-caveat-line{font-family:var(--label);font-size:11px;color:var(--text-faint);font-style:italic;margin-top:10px;}
 .intel-empty{font-family:var(--label);font-size:13px;color:var(--text-faint);text-align:center;padding:24px;}
+
+/* ---------- Live Scores Ticker (V1) ---------- */
+#cp-ticker{
+  background:var(--bg-elevated);
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+  white-space:nowrap;
+  padding:8px 0;
+}
+
+.cp-ticker-track{
+  display:flex;
+  width:max-content;
+  animation:cp-ticker-scroll 45s linear infinite;
+}
+.cp-ticker-track:hover{animation-play-state:paused;}
+
+.cp-ticker-content{
+  display:flex;
+  align-items:center;
+  flex-shrink:0;
+}
+
+.cp-ticker-item{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--label);
+  font-size:12.5px;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  color:var(--text-dim);
+  padding:0 24px;
+}
+
+.cp-ticker-league{
+  font-weight:600;
+  color:var(--gold);
+}
+
+.cp-ticker-live-dot{
+  color:var(--loss);
+  animation:cp-ticker-pulse 1.4s ease-in-out infinite;
+}
+
+.cp-ticker-status-live{color:var(--loss);font-weight:600;}
+.cp-ticker-status-final{color:var(--text-faint);}
+.cp-ticker-status-pre{color:var(--gold-bright);}
+
+.cp-ticker-sep{color:var(--text-faint);padding:0 4px;}
+
+@keyframes cp-ticker-scroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+@keyframes cp-ticker-pulse{
+  0%,100%{opacity:1;}
+  50%{opacity:0.3;}
+}
+
+@media (max-width:640px){
+  .cp-ticker-item{font-size:11px;padding:0 14px;}
+}

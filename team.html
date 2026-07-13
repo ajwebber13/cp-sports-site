@@ -70,15 +70,7 @@
 </head>
 <body>
 
-<div class="ticker-bar" aria-hidden="true">
-  <div class="ticker-track">
-    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
-    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
-    <span class="ticker-item"><span class="dot">●</span> TRENDING PROP <b>A'JA WILSON</b> O24.5 PTS — 8/10</span>
-    <span class="ticker-item"><span class="dot">●</span> WNBA <b>LV ACES</b> 84 <span class="up">▲</span> <b>NY LIBERTY</b> 79 — FINAL</span>
-    <span class="ticker-item"><span class="dot">●</span> POWER RANK #1 <b>MINNESOTA LYNX</b> 92.1</span>
-  </div>
-</div>
+<div id="cp-ticker"></div>
 
 <header>
   <nav>
@@ -153,6 +145,7 @@
 </footer>
 
 <script src="badges.js"></script>
+<script src="ticker.js"></script>
 <script>
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
@@ -174,8 +167,10 @@
   // per-team file — that migration only happens once there's enough
   // per-team detail to justify it), finds the matching team, and
   // renders the full breakdown. RATINGS.offense/rebounding are still
-  // placeholder — no offensive-rating module exists in the backend as
-  // of 2026-07-12 (see json note field) — labelled honestly below.
+  // placeholder (value: null) — no offensive-rating module exists in
+  // the backend as of 2026-07-13 (see json note field) — labelled
+  // honestly below, and barRow() below is null-safe so it renders
+  // "—" instead of the literal word "null".
   const params = new URLSearchParams(window.location.search);
   const slug = params.get('team') || 'minnesota-lynx';
 
@@ -203,13 +198,16 @@
       const r = team.ratings;
       const barRow = (label, rating) => {
         const isLow = rating.confidence === 'low';
+        const hasValue = rating.value !== null && rating.value !== undefined;
+        const displayValue = hasValue ? rating.value : '—';
+        const widthPct = hasValue ? rating.value : 0;
         return `
         <div class="bar-row">
           <div class="bar-row-top">
             <span>${label}${isLow ? ' <span class="conf-flag" title="Placeholder — not yet computed by the backend engine">low confidence</span>' : ''}</span>
-            <b>${rating.value}</b>
+            <b>${displayValue}</b>
           </div>
-          <div class="bar-track"><div class="bar-fill ${isLow ? 'bar-fill-low' : ''}" style="width:${rating.value}%;"></div></div>
+          <div class="bar-track"><div class="bar-fill ${isLow ? 'bar-fill-low' : ''}" style="width:${widthPct}%;"></div></div>
         </div>`;
       };
 
@@ -226,7 +224,7 @@
                 ${renderTeamBadge(team.team, 48)}
                 <h1>${team.team}</h1>
               </div>
-              <p class="team-header-meta">${team.record} · WNBA</p>
+              <p class="team-header-meta">${team.record.value} · WNBA</p>
               <span class="power-rank-tag">Power Rank #${team.rank}</span>
             </div>
             <div class="power-score-block">
