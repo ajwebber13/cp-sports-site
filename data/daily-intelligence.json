@@ -1,13 +1,13 @@
 {
-  "date": "2026-07-13",
-  "generated_at": "2026-07-13T17:47:08.105367+00:00",
+  "date": "2026-07-14",
+  "generated_at": "2026-07-14T16:59:03.005410+00:00",
   "locks": [],
   "projections": [
     {
       "sport": "wnba",
-      "game": "Phoenix Mercury @ Minnesota Lynx",
-      "favorite": "Minnesota Lynx ML",
-      "win_probability": 76.5,
+      "game": "Washington Mystics @ Toronto Tempo",
+      "favorite": "Toronto Tempo ML",
+      "win_probability": 79.9,
       "confidence_tier": "Medium",
       "confidence_grade": "B"
     }
