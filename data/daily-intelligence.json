@@ -1,17 +1,31 @@
 {
-  "date": "2026-07-14",
-  "generated_at": "2026-07-14T16:59:03.005410+00:00",
-  "locks": [],
-  "projections": [
+  "date": "2026-07-15",
+  "generated_at": "2026-07-15T17:00:52.965992+00:00",
+  "locks": [
     {
       "sport": "wnba",
-      "game": "Washington Mystics @ Toronto Tempo",
-      "favorite": "Toronto Tempo ML",
-      "win_probability": 79.9,
-      "confidence_tier": "Medium",
-      "confidence_grade": "B"
+      "game": "Golden State Valkyries @ Indiana Fever",
+      "pick": "Indiana Fever ML",
+      "odds": -125,
+      "confidence": 81.8,
+      "confidence_tier": "High",
+      "confidence_grade": "A",
+      "edge_pct": 26.2
     }
   ],
-  "props": [],
-  "parlay_eligible": false
+  "projections": [],
+  "props": [
+    {
+      "sport": "wnba",
+      "player": "Caitlin Clark",
+      "stat": "PTS",
+      "line": 15.5,
+      "side": "OVER",
+      "historical_hit_rate_pct": 88.2,
+      "games_sampled": 17,
+      "confidence_tier": "High",
+      "confidence_grade": "A"
+    }
+  ],
+  "parlay_eligible": true
 }
