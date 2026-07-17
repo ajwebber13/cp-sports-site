@@ -1,6 +1,6 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-07-16",
+  "updated": "2026-07-17",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
