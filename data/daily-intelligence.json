@@ -1,12 +1,21 @@
 {
-  "date": "2026-07-16",
-  "generated_at": "2026-07-16T16:58:41.404773+00:00",
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T16:55:34.165263+00:00",
   "locks": [],
-  "projections": [],
+  "projections": [
+    {
+      "sport": "wnba",
+      "game": "Seattle Storm @ Indiana Fever",
+      "favorite": "Indiana Fever ML",
+      "win_probability": 79.6,
+      "confidence_tier": "Medium",
+      "confidence_grade": "B"
+    }
+  ],
   "props": [
     {
       "sport": "mlb",
-      "player": "Gabriel Rincones Jr.",
+      "player": "Edwin Arroyo",
       "stat": "RBIS",
       "line": 0.5,
       "side": "FADE (under)",
