@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-07-16",
+  "updated": "2026-07-17",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -14,7 +14,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1756.5,
+          "value": 1788.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -44,7 +44,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 95.5,
+      "power_score": 96.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -66,7 +66,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1766.3,
+          "value": 1769.2,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -81,7 +81,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 73.8,
+          "value": 72.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -91,12 +91,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 36.8,
+          "value": 26.9,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 85.3,
+      "power_score": 82.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -116,7 +116,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1708.5,
+          "value": 1676.3,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -131,7 +131,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 35.6,
+          "value": 35.8,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -141,12 +141,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 55.7,
+          "value": 65.8,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 69.1,
+      "power_score": 66.9,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -182,7 +182,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 55.0,
+          "value": 54.9,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -192,12 +192,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 25.0,
+          "value": 20.9,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 68.0,
+      "power_score": 66.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -232,7 +232,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 60.7,
+          "value": 60.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -242,12 +242,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 62.3,
+          "value": 60.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 63.1,
+      "power_score": 62.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -283,7 +283,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 52.4,
+          "value": 52.3,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -293,12 +293,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 38.3,
+          "value": 34.8,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 59.8,
+      "power_score": 58.8,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -318,7 +318,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1583.6,
+          "value": 1530.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -333,7 +333,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 74.3,
+          "value": 74.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -343,12 +343,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 14.4,
+          "value": 4.0,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 57.3,
+      "power_score": 51.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -393,12 +393,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 9.4,
+          "value": 4.4,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 50.1,
+      "power_score": 49.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -433,7 +433,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 42.9,
+          "value": 43.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -448,7 +448,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 35.0,
+      "power_score": 35.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -460,107 +460,6 @@
     },
     {
       "rank": 10,
-      "team": "Chicago Sky",
-      "slug": "chicago-sky",
-      "record": {
-        "value": "7-15",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1370.6,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 22.9,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 30.9,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 54.2,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 28.2,
-      "trend": {
-        "direction": "flat",
-        "movement": 0
-      },
-      "strengths": [
-        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
-        "Currently riding a 1-game loss streak"
-      ]
-    },
-    {
-      "rank": 11,
-      "team": "Toronto Tempo",
-      "slug": "toronto-tempo",
-      "record": {
-        "value": "9-12",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1371.0,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 42.7,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 13.6,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 32.6,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 26.5,
-      "trend": {
-        "direction": "flat",
-        "movement": 0
-      },
-      "strengths": [
-        "Currently riding a 3-game loss streak"
-      ]
-    },
-    {
-      "rank": 12,
       "team": "Los Angeles Sparks",
       "slug": "los-angeles-sparks",
       "record": {
@@ -570,7 +469,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1356.1,
+          "value": 1353.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -595,18 +494,119 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 41.8,
+          "value": 52.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 25.9,
+      "power_score": 27.7,
       "trend": {
         "direction": "up",
-        "movement": 1
+        "movement": 2
       },
       "strengths": [
+        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
         "Currently riding a 1-game win streak"
+      ]
+    },
+    {
+      "rank": 11,
+      "team": "Chicago Sky",
+      "slug": "chicago-sky",
+      "record": {
+        "value": "7-15",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1382.2,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 22.9,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 31.1,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 39.9,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 27.3,
+      "trend": {
+        "direction": "down",
+        "movement": -1
+      },
+      "strengths": [
+        "Currently riding a 1-game loss streak"
+      ]
+    },
+    {
+      "rank": 12,
+      "team": "Toronto Tempo",
+      "slug": "toronto-tempo",
+      "record": {
+        "value": "9-12",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1371.0,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 42.7,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 14.0,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 28.9,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 26.4,
+      "trend": {
+        "direction": "down",
+        "movement": -1
+      },
+      "strengths": [
+        "Currently riding a 3-game loss streak"
       ]
     },
     {
@@ -620,7 +620,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1367.5,
+          "value": 1420.4,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -635,7 +635,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 21.5,
+          "value": 21.8,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -650,10 +650,10 @@
           "confidence": "high"
         }
       },
-      "power_score": 21.6,
+      "power_score": 26.0,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 3-game loss streak"
@@ -685,7 +685,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 47.6,
+          "value": 47.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -695,12 +695,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 22.1,
+          "value": 17.7,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 19.7,
+      "power_score": 19.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -720,7 +720,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1269.2,
+          "value": 1257.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -735,7 +735,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 44.0,
+          "value": 44.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -745,12 +745,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 21.8,
+          "value": 11.8,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 14.2,
+      "power_score": 12.8,
       "trend": {
         "direction": "flat",
         "movement": 0
