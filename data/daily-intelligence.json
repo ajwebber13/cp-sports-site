@@ -1,17 +1,19 @@
 {
-  "date": "2026-07-17",
-  "generated_at": "2026-07-17T20:56:46.156953+00:00",
-  "locks": [],
-  "projections": [
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T16:40:47.311615+00:00",
+  "locks": [
     {
       "sport": "wnba",
-      "game": "Seattle Storm @ Indiana Fever",
-      "favorite": "Indiana Fever ML",
-      "win_probability": 79.6,
-      "confidence_tier": "Medium",
-      "confidence_grade": "B"
+      "game": "Portland Fire @ Minnesota Lynx",
+      "pick": "Minnesota Lynx ML",
+      "odds": -900,
+      "confidence": 87.5,
+      "confidence_tier": "High",
+      "confidence_grade": "A",
+      "edge_pct": -2.5
     }
   ],
+  "projections": [],
   "props": [
     {
       "sport": "mlb",
@@ -25,5 +27,5 @@
       "confidence_grade": "A+"
     }
   ],
-  "parlay_eligible": false
+  "parlay_eligible": true
 }
