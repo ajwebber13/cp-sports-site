@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-18",
-  "generated_at": "2026-07-18T16:40:47.311615+00:00",
+  "date": "2026-07-19",
+  "generated_at": "2026-07-19T16:40:43.173746+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Portland Fire @ Minnesota Lynx",
-      "pick": "Minnesota Lynx ML",
-      "odds": -900,
-      "confidence": 87.5,
+      "game": "Chicago Sky @ Atlanta Dream",
+      "pick": "Chicago Sky ML",
+      "odds": 440,
+      "confidence": 83.8,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": -2.5
+      "edge_pct": -2.3
     }
   ],
   "projections": [],
@@ -22,7 +22,7 @@
       "line": 0.5,
       "side": "FADE (under)",
       "historical_hit_rate_pct": 100.0,
-      "games_sampled": 5,
+      "games_sampled": 6,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
