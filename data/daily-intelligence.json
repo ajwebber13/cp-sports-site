@@ -1,31 +1,20 @@
 {
-  "date": "2026-07-19",
-  "generated_at": "2026-07-19T16:40:43.173746+00:00",
-  "locks": [
-    {
-      "sport": "wnba",
-      "game": "Chicago Sky @ Atlanta Dream",
-      "pick": "Chicago Sky ML",
-      "odds": 440,
-      "confidence": 83.8,
-      "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": -2.3
-    }
-  ],
+  "date": "2026-07-20",
+  "generated_at": "2026-07-20T17:12:40.916209+00:00",
+  "locks": [],
   "projections": [],
   "props": [
     {
       "sport": "mlb",
-      "player": "Edwin Arroyo",
+      "player": "Jeremy Pena",
       "stat": "RBIS",
       "line": 0.5,
       "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 6,
+      "historical_hit_rate_pct": 93.3,
+      "games_sampled": 15,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
   ],
-  "parlay_eligible": true
+  "parlay_eligible": false
 }
