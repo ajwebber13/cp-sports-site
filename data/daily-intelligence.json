@@ -1,20 +1,19 @@
 {
-  "date": "2026-07-20",
-  "generated_at": "2026-07-20T17:12:40.916209+00:00",
-  "locks": [],
-  "projections": [],
-  "props": [
+  "date": "2026-07-21",
+  "generated_at": "2026-07-21T17:04:21.081557+00:00",
+  "locks": [
     {
       "sport": "mlb",
-      "player": "Jeremy Pena",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 93.3,
-      "games_sampled": 15,
+      "game": "St. Louis Cardinals @ Los Angeles Angels",
+      "pick": "Los Angeles Angels +1.5",
+      "odds": -191,
+      "confidence": 87.1,
       "confidence_tier": "High",
-      "confidence_grade": "A+"
+      "confidence_grade": "A",
+      "edge_pct": 34.7
     }
   ],
+  "projections": [],
+  "props": [],
   "parlay_eligible": false
 }
