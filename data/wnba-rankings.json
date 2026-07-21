@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-07-20",
+  "updated": "2026-07-21",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -81,7 +81,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 72.3,
+          "value": 72.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -131,7 +131,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 54.9,
+          "value": 55.4,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -146,7 +146,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 66.1,
+      "power_score": 66.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -181,7 +181,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 31.3,
+          "value": 30.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -196,7 +196,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 65.6,
+      "power_score": 65.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -232,7 +232,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 60.5,
+          "value": 60.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -247,7 +247,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 61.8,
+      "power_score": 61.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -333,7 +333,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 52.3,
+          "value": 50.3,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -348,7 +348,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 50.0,
+      "power_score": 49.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -383,7 +383,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 75.9,
+          "value": 76.2,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -398,7 +398,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 43.7,
+      "power_score": 43.8,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -434,7 +434,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 31.3,
+          "value": 30.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -449,7 +449,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 37.5,
+      "power_score": 37.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -484,7 +484,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 41.5,
+          "value": 46.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -499,7 +499,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 32.6,
+      "power_score": 33.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -535,7 +535,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 33.3,
+          "value": 31.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -550,7 +550,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 28.6,
+      "power_score": 28.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -636,7 +636,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 9.7,
+          "value": 8.8,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -651,7 +651,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 23.8,
+      "power_score": 23.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -686,7 +686,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 48.7,
+          "value": 51.8,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -701,7 +701,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 20.9,
+      "power_score": 21.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -736,7 +736,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 38.5,
+          "value": 38.3,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -751,7 +751,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 13.1,
+      "power_score": 13.0,
       "trend": {
         "direction": "flat",
         "movement": 0
