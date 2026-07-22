@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -14,7 +14,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1791.4,
+          "value": 1750.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -44,7 +44,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 96.3,
+      "power_score": 94.9,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -96,7 +96,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 81.9,
+      "power_score": 83.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -116,7 +116,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1675.0,
+          "value": 1663.5,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -141,12 +141,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 21.3,
+          "value": 23.5,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 66.2,
+      "power_score": 67.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -196,7 +196,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 65.5,
+      "power_score": 66.9,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -217,7 +217,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1536.0,
+          "value": 1547.5,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -242,12 +242,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 67.3,
+          "value": 73.6,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 61.7,
+      "power_score": 64.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -298,7 +298,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 58.8,
+      "power_score": 59.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -348,7 +348,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 49.6,
+      "power_score": 50.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -368,7 +368,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1403.9,
+          "value": 1444.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -393,12 +393,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 16.8,
+          "value": 29.4,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 43.8,
+      "power_score": 49.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -449,7 +449,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 37.3,
+      "power_score": 38.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -550,7 +550,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 28.3,
+      "power_score": 28.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -600,7 +600,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 25.1,
+      "power_score": 25.3,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -651,7 +651,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 23.6,
+      "power_score": 23.9,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -701,7 +701,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 21.5,
+      "power_score": 22.0,
       "trend": {
         "direction": "flat",
         "movement": 0
