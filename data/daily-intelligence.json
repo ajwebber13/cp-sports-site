@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-21",
-  "generated_at": "2026-07-21T17:04:21.081557+00:00",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T17:04:49.407964+00:00",
   "locks": [
     {
-      "sport": "mlb",
-      "game": "St. Louis Cardinals @ Los Angeles Angels",
-      "pick": "Los Angeles Angels +1.5",
-      "odds": -191,
-      "confidence": 87.1,
+      "sport": "wnba",
+      "game": "Chicago Sky @ New York Liberty",
+      "pick": "Under 178.5",
+      "odds": -113,
+      "confidence": 97.1,
       "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 34.7
+      "confidence_grade": "A+",
+      "edge_pct": 44.7
     }
   ],
   "projections": [],
