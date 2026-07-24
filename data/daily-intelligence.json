@@ -1,19 +1,31 @@
 {
-  "date": "2026-07-23",
-  "generated_at": "2026-07-23T17:07:40.774421+00:00",
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T19:32:36.666014+00:00",
   "locks": [
     {
       "sport": "mlb",
-      "game": "Kansas City Royals @ Detroit Tigers",
-      "pick": "Under 8.5",
-      "odds": -120,
-      "confidence": 90.4,
+      "game": "Arizona Diamondbacks @ Washington Nationals",
+      "pick": "Arizona Diamondbacks -1.5",
+      "odds": 129,
+      "confidence": 83.4,
       "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 35.9
+      "confidence_grade": "A",
+      "edge_pct": 39.7
     }
   ],
   "projections": [],
-  "props": [],
-  "parlay_eligible": false
+  "props": [
+    {
+      "sport": "mlb",
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 5,
+      "confidence_tier": "High",
+      "confidence_grade": "A+"
+    }
+  ],
+  "parlay_eligible": true
 }
