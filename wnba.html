@@ -85,6 +85,8 @@
   .bar-row-top{display:flex;justify-content:space-between;font-family:var(--label);font-size:12px;letter-spacing:0.04em;color:var(--text-dim);margin-bottom:6px;text-transform:uppercase;}
   .bar-track{height:7px;background:var(--bg-elevated);border-radius:4px;overflow:hidden;}
   .bar-fill{height:100%;background:var(--gold);border-radius:4px;}
+  .bar-fill.placeholder{background:repeating-linear-gradient(45deg,var(--text-faint),var(--text-faint) 4px,transparent 4px,transparent 8px);opacity:0.35;}
+  .bar-value-placeholder{color:var(--text-faint);}
   .strengths-label{font-family:var(--label);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin:24px 0 12px;}
   .strengths-list li{font-size:13.5px;color:var(--text-dim);padding:7px 0;display:flex;gap:9px;align-items:flex-start;}
   .strengths-list li::before{content:'✓';color:var(--win);flex-shrink:0;font-weight:600;}
@@ -173,23 +175,23 @@
     <div class="pulse-strip">
       <div class="pulse-cell">
         <p class="pulse-cell-label">#1 Power Rank</p>
-        <p class="pulse-cell-value">Minnesota Lynx</p>
-        <p class="pulse-cell-sub">92.1 · 15-5</p>
+        <p class="pulse-cell-value" id="heroTopTeam">—</p>
+        <p class="pulse-cell-sub" id="heroTopSub">—</p>
       </div>
       <div class="pulse-cell">
         <p class="pulse-cell-label">Biggest Riser</p>
-        <p class="pulse-cell-value trend-up">Dallas Wings</p>
-        <p class="pulse-cell-sub">▲ 3 spots this week</p>
+        <p class="pulse-cell-value" id="heroRiserTeam">—</p>
+        <p class="pulse-cell-sub" id="heroRiserSub">—</p>
       </div>
       <div class="pulse-cell">
         <p class="pulse-cell-label">Trending Prop</p>
-        <p class="pulse-cell-value">A'ja Wilson</p>
-        <p class="pulse-cell-sub">O24.5 PTS · 8/10 last 10</p>
+        <p class="pulse-cell-value" style="color:var(--text-faint);font-size:20px;">Sample Preview</p>
+        <p class="pulse-cell-sub">Live props coming soon</p>
       </div>
       <div class="pulse-cell">
         <p class="pulse-cell-label">Tonight's Slate</p>
-        <p class="pulse-cell-value">3 Games</p>
-        <p class="pulse-cell-sub">1 model edge flagged</p>
+        <p class="pulse-cell-value" style="color:var(--text-faint);font-size:20px;">Sample Preview</p>
+        <p class="pulse-cell-sub">Live matchups coming soon</p>
       </div>
     </div>
   </div>
@@ -223,33 +225,31 @@
       <div class="team-intel-card">
         <div>
           <div class="team-intel-header">
-            <h3>Minnesota Lynx</h3>
-            <span class="rk">Power Rank #1</span>
+            <h3 id="teamIntelName">—</h3>
+            <span class="rk" id="teamIntelRank">—</span>
           </div>
           <div class="bar-row">
-            <div class="bar-row-top"><span>Offense</span><span>84</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:84%;"></div></div>
+            <div class="bar-row-top"><span>Offense</span><span id="teamIntelOffVal">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="teamIntelOffBar" style="width:0%;"></div></div>
           </div>
           <div class="bar-row">
-            <div class="bar-row-top"><span>Defense</span><span>96</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:96%;"></div></div>
+            <div class="bar-row-top"><span>Defense</span><span id="teamIntelDefVal">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="teamIntelDefBar" style="width:0%;"></div></div>
           </div>
           <div class="bar-row">
-            <div class="bar-row-top"><span>Rebounding</span><span>78</span></div>
-            <div class="bar-track"><div class="bar-fill" style="width:78%;"></div></div>
+            <div class="bar-row-top"><span>Rebounding</span><span id="teamIntelRebVal">—</span></div>
+            <div class="bar-track"><div class="bar-fill" id="teamIntelRebBar" style="width:0%;"></div></div>
           </div>
-          <a href="team.html?team=minnesota-lynx" class="intel-link">Full Team Profile →</a>
+          <a href="team.html?team=minnesota-lynx" class="intel-link" id="teamIntelLink">Full Team Profile →</a>
         </div>
         <div>
           <p class="strengths-label">Strengths</p>
-          <ul class="strengths-list">
-            <li>Elite half-court defense — top efficiency mark in the league</li>
-            <li>Turnover creation drives transition offense</li>
-            <li>Consistent late-game execution in clutch minutes</li>
+          <ul class="strengths-list" id="teamIntelStrengths">
+            <li>Loading…</li>
           </ul>
-          <p class="strengths-label">Schedule Note</p>
-          <ul class="strengths-list">
-            <li>Played the league's 2nd-hardest schedule to date</li>
+          <p class="strengths-label">Schedule Strength</p>
+          <ul class="strengths-list" id="teamIntelSchedule">
+            <li>Loading…</li>
           </ul>
         </div>
       </div>
@@ -418,6 +418,66 @@
           <td class="num trend-${t.trend.direction}">${TREND_ARROW[t.trend.direction] || '—'}</td>
         </tr>
       `).join('');
+
+      // ---- Hero strip: #1 Power Rank ----
+      const top = data.rankings.find(t => t.rank === 1) || data.rankings[0];
+      if (top) {
+        document.getElementById('heroTopTeam').textContent = top.team;
+        document.getElementById('heroTopSub').textContent = `${top.power_score} · ${top.record.value}`;
+      }
+
+      // ---- Hero strip: Biggest Riser ----
+      const risers = data.rankings.filter(t => t.trend.direction === 'up' && t.trend.movement > 0);
+      const riserTeamEl = document.getElementById('heroRiserTeam');
+      const riserSubEl = document.getElementById('heroRiserSub');
+      if (risers.length) {
+        const biggest = risers.reduce((a, b) => (b.trend.movement > a.trend.movement ? b : a));
+        riserTeamEl.textContent = biggest.team;
+        riserTeamEl.classList.add('trend-up');
+        riserSubEl.textContent = `▲ ${biggest.trend.movement} spot${biggest.trend.movement > 1 ? 's' : ''} this week`;
+      } else {
+        riserTeamEl.textContent = 'No movers';
+        riserSubEl.textContent = 'Rankings holding steady';
+      }
+
+      // ---- Team Intelligence card: always the #1 team ----
+      if (top) {
+        document.getElementById('teamIntelName').textContent = top.team;
+        document.getElementById('teamIntelRank').textContent = `Power Rank #${top.rank}`;
+        document.getElementById('teamIntelLink').href = `team.html?team=${top.slug}`;
+
+        const setBar = (valId, barId, rating) => {
+          const valEl = document.getElementById(valId);
+          const barEl = document.getElementById(barId);
+          if (rating.value === null || rating.value === undefined) {
+            valEl.textContent = '—';
+            valEl.classList.add('bar-value-placeholder');
+            barEl.style.width = '100%';
+            barEl.classList.add('placeholder');
+          } else {
+            valEl.textContent = rating.value;
+            barEl.style.width = Math.min(100, rating.value) + '%';
+          }
+        };
+        setBar('teamIntelOffVal', 'teamIntelOffBar', top.ratings.offense);
+        setBar('teamIntelDefVal', 'teamIntelDefBar', top.ratings.defense);
+        setBar('teamIntelRebVal', 'teamIntelRebBar', top.ratings.rebounding);
+
+        const strengthsEl = document.getElementById('teamIntelStrengths');
+        strengthsEl.innerHTML = (top.strengths && top.strengths.length)
+          ? top.strengths.map(s => `<li>${s}</li>`).join('')
+          : '<li>No standout factors flagged yet</li>';
+
+        const sosEl = document.getElementById('teamIntelSchedule');
+        const sos = top.ratings.schedule_strength;
+        sosEl.innerHTML = (sos && sos.value !== null)
+          ? `<li>Schedule strength score: ${sos.value} (higher = tougher slate faced)</li>`
+          : '<li>Schedule strength not available yet</li>';
+
+        // Badge next to team name — added here so it always matches the real #1 team
+        document.getElementById('teamIntelName')
+          .insertAdjacentHTML('beforebegin', renderTeamBadge(top.team, 40));
+      }
     })
     .catch(err => {
       const tbody = document.getElementById('rankingsBody');
@@ -425,11 +485,9 @@
       console.error(err);
     });
 
-  // Inject badges into static (non-JSON-rendered) cards — Team
-  // Intelligence header, Player Intelligence header, Tonight's Slate.
-  const teamIntelH3 = document.querySelector('.team-intel-header h3');
-  if (teamIntelH3) teamIntelH3.insertAdjacentHTML('beforebegin', renderTeamBadge(teamIntelH3.textContent.trim(), 40));
-
+  // Inject badges into static (non-JSON-rendered) cards — Player
+  // Intelligence header and Tonight's Slate. Team Intelligence badge
+  // is injected dynamically once real rankings data loads (see fetch above).
   const playerCardTop = document.querySelector('.player-card-top');
   if (playerCardTop) {
     const nameText = playerCardTop.querySelector('.player-name').textContent.trim();
