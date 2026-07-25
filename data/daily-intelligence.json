@@ -1,16 +1,16 @@
 {
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T19:32:36.666014+00:00",
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T20:56:33.496560+00:00",
   "locks": [
     {
       "sport": "mlb",
-      "game": "Arizona Diamondbacks @ Washington Nationals",
-      "pick": "Arizona Diamondbacks -1.5",
-      "odds": 129,
-      "confidence": 83.4,
+      "game": "Los Angeles Angels @ San Francisco Giants",
+      "pick": "San Francisco Giants ML",
+      "odds": -125,
+      "confidence": 81.9,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 39.7
+      "edge_pct": 26.3
     }
   ],
   "projections": [],
@@ -22,7 +22,7 @@
       "line": 0.5,
       "side": "FADE (under)",
       "historical_hit_rate_pct": 100.0,
-      "games_sampled": 5,
+      "games_sampled": 6,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
