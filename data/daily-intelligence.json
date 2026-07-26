@@ -1,31 +1,19 @@
 {
-  "date": "2026-07-25",
-  "generated_at": "2026-07-25T20:56:33.496560+00:00",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T16:43:04.110098+00:00",
   "locks": [
     {
       "sport": "mlb",
-      "game": "Los Angeles Angels @ San Francisco Giants",
-      "pick": "San Francisco Giants ML",
-      "odds": -125,
-      "confidence": 81.9,
+      "game": "Houston Astros @ Chicago White Sox",
+      "pick": "Chicago White Sox ML",
+      "odds": -108,
+      "confidence": 85.5,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 26.3
+      "edge_pct": 33.6
     }
   ],
   "projections": [],
-  "props": [
-    {
-      "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 6,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
-    }
-  ],
-  "parlay_eligible": true
+  "props": [],
+  "parlay_eligible": false
 }
