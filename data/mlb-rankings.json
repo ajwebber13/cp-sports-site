@@ -1,0 +1,22 @@
+{
+  "updated": "2026-07-26",
+  "rankings": [
+    {
+      "rank": 1,
+      "team": "Los Angeles Dodgers",
+      "slug": "los-angeles-dodgers",
+      "record": { "value": "0-0" },
+      "power_score": 0,
+      "trend": { "direction": "flat", "movement": 0 },
+      "ratings": {
+        "elo": { "value": null },
+        "form": { "value": null },
+        "offense": { "value": null },
+        "defense": { "value": null },
+        "rebounding": { "value": null },
+        "schedule_strength": { "value": null }
+      },
+      "strengths": []
+    }
+  ]
+}
