@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-07-25",
+  "updated": "2026-07-26",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -46,8 +46,8 @@
       },
       "power_score": 79.4,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 1-game loss streak"
@@ -96,8 +96,8 @@
       },
       "power_score": 77.3,
       "trend": {
-        "direction": "up",
-        "movement": 6
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -147,8 +147,8 @@
       },
       "power_score": 76.9,
       "trend": {
-        "direction": "down",
-        "movement": -2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -199,8 +199,8 @@
       },
       "power_score": 71.0,
       "trend": {
-        "direction": "up",
-        "movement": 2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -250,8 +250,8 @@
       },
       "power_score": 67.8,
       "trend": {
-        "direction": "down",
-        "movement": -2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 4-game win streak"
@@ -300,8 +300,8 @@
       },
       "power_score": 65.7,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -351,8 +351,8 @@
       },
       "power_score": 63.0,
       "trend": {
-        "direction": "down",
-        "movement": -3
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 2-game win streak"
@@ -401,8 +401,8 @@
       },
       "power_score": 44.7,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 4-game loss streak"
@@ -451,8 +451,8 @@
       },
       "power_score": 39.3,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 1-game loss streak"
@@ -501,8 +501,8 @@
       },
       "power_score": 37.8,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -552,8 +552,8 @@
       },
       "power_score": 27.6,
       "trend": {
-        "direction": "up",
-        "movement": 2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -603,8 +603,8 @@
       },
       "power_score": 26.8,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -654,8 +654,8 @@
       },
       "power_score": 25.6,
       "trend": {
-        "direction": "up",
-        "movement": 2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -756,8 +756,8 @@
       },
       "power_score": 16.4,
       "trend": {
-        "direction": "down",
-        "movement": -3
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 1-game win streak"
