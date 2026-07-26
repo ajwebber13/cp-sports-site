@@ -1,38 +1,38 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-07-25",
+  "updated": "2026-07-26",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "148-107",
+      "value": "165-117",
       "source": "performance_tracker",
       "confidence": "high"
     },
     "win_rate_pct": {
-      "value": 58.0,
+      "value": 58.5,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "total_graded": {
-      "value": 255,
+      "value": 282,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 14.4,
+      "value": 14.9,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 33.19,
+      "value": 38.36,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 230,
+      "value": 257,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 13.14,
         "picks_used": 21,
-        "picks_skipped_no_clv": 234
+        "picks_skipped_no_clv": 261
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -55,12 +55,12 @@
     {
       "sport": "mlb",
       "record": {
-        "value": "80-68",
+        "value": "97-78",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 54.1,
+        "value": 55.4,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -109,12 +109,12 @@
     {
       "bucket": "85-89%",
       "record": {
-        "value": "5-2",
+        "value": "6-2",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 71.4,
+        "value": 75.0,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -122,12 +122,12 @@
     {
       "bucket": "80-84%",
       "record": {
-        "value": "3-5",
+        "value": "5-5",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 37.5,
+        "value": 50.0,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -135,12 +135,12 @@
     {
       "bucket": "75-79%",
       "record": {
-        "value": "13-7",
+        "value": "15-7",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 65.0,
+        "value": 68.2,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -148,12 +148,12 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "41-55",
+        "value": "53-65",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 42.7,
+        "value": 44.9,
         "source": "performance_tracker",
         "confidence": "high"
       }
