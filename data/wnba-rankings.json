@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-07-26",
+  "updated": "2026-07-27",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -79,7 +79,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 65.9,
+          "value": 65.4,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -94,7 +94,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 77.3,
+      "power_score": 77.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -233,7 +233,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 52.0,
+          "value": 51.4,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -248,7 +248,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 67.8,
+      "power_score": 67.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -283,7 +283,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 58.7,
+          "value": 58.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -298,7 +298,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 65.7,
+      "power_score": 65.5,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -334,7 +334,7 @@
           "confidence": "low"
         },
         "defense": {
-          "value": 35.8,
+          "value": 35.2,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -349,7 +349,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 63.0,
+      "power_score": 62.9,
       "trend": {
         "direction": "flat",
         "movement": 0
