@@ -1,19 +1,31 @@
 {
-  "date": "2026-07-26",
-  "generated_at": "2026-07-26T16:43:04.110098+00:00",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T17:25:56.760539+00:00",
   "locks": [
     {
       "sport": "mlb",
-      "game": "Houston Astros @ Chicago White Sox",
-      "pick": "Chicago White Sox ML",
-      "odds": -108,
-      "confidence": 85.5,
+      "game": "Toronto Blue Jays @ Washington Nationals",
+      "pick": "Washington Nationals ML",
+      "odds": -120,
+      "confidence": 99.9,
       "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 33.6
+      "confidence_grade": "A+",
+      "edge_pct": 45.4
     }
   ],
   "projections": [],
-  "props": [],
-  "parlay_eligible": false
+  "props": [
+    {
+      "sport": "mlb",
+      "player": "Christian Encarnacion-Strand",
+      "stat": "HITS",
+      "line": 0.5,
+      "side": "OVER",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 6,
+      "confidence_tier": "High",
+      "confidence_grade": "A+"
+    }
+  ],
+  "parlay_eligible": true
 }
