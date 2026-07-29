@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-28",
-  "generated_at": "2026-07-28T17:15:30.945400+00:00",
+  "date": "2026-07-29",
+  "generated_at": "2026-07-29T17:00:43.296515+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Toronto Tempo @ Minnesota Lynx",
-      "pick": "Minnesota Lynx -15.5",
+      "game": "Atlanta Dream @ Dallas Wings",
+      "pick": "Under 181.5",
       "odds": -110,
-      "confidence": 98.7,
+      "confidence": 90.2,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 46.3
+      "edge_pct": 37.8
     },
     {
       "sport": "mlb",
-      "game": "Baltimore Orioles @ Detroit Tigers",
-      "pick": "Detroit Tigers ML",
-      "odds": -144,
-      "confidence": 86.2,
+      "game": "Kansas City Royals @ Minnesota Twins",
+      "pick": "Kansas City Royals +1.5",
+      "odds": -131,
+      "confidence": 85.6,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 27.2
+      "edge_pct": 28.9
     }
   ],
   "projections": [],
