@@ -1,38 +1,38 @@
 {
-  "date": "2026-07-29",
-  "generated_at": "2026-07-29T17:00:43.296515+00:00",
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T17:12:23.316653+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Atlanta Dream @ Dallas Wings",
+      "game": "New York Liberty @ Las Vegas Aces",
       "pick": "Under 181.5",
       "odds": -110,
-      "confidence": 90.2,
+      "confidence": 93.4,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 37.8
+      "edge_pct": 41.0
     },
     {
       "sport": "mlb",
-      "game": "Kansas City Royals @ Minnesota Twins",
-      "pick": "Kansas City Royals +1.5",
-      "odds": -131,
-      "confidence": 85.6,
+      "game": "Texas Rangers @ Tampa Bay Rays",
+      "pick": "Tampa Bay Rays ML",
+      "odds": -185,
+      "confidence": 83.4,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 28.9
+      "edge_pct": 18.5
     }
   ],
   "projections": [],
   "props": [
     {
       "sport": "mlb",
-      "player": "Christian Encarnacion-Strand",
-      "stat": "HITS",
+      "player": "Tommy White",
+      "stat": "RBIS",
       "line": 0.5,
-      "side": "OVER",
+      "side": "FADE (under)",
       "historical_hit_rate_pct": 100.0,
-      "games_sampled": 6,
+      "games_sampled": 11,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
