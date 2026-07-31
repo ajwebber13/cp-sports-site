@@ -1,26 +1,26 @@
 {
-  "date": "2026-07-30",
-  "generated_at": "2026-07-30T17:12:23.316653+00:00",
+  "date": "2026-07-31",
+  "generated_at": "2026-07-31T17:15:43.072253+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "New York Liberty @ Las Vegas Aces",
-      "pick": "Under 181.5",
+      "game": "Indiana Fever @ Portland Fire",
+      "pick": "Under 187.5",
       "odds": -110,
-      "confidence": 93.4,
+      "confidence": 95.3,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 41.0
+      "edge_pct": 42.9
     },
     {
       "sport": "mlb",
-      "game": "Texas Rangers @ Tampa Bay Rays",
+      "game": "Chicago White Sox @ Tampa Bay Rays",
       "pick": "Tampa Bay Rays ML",
-      "odds": -185,
-      "confidence": 83.4,
+      "odds": -142,
+      "confidence": 81.7,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 18.5
+      "edge_pct": 23.0
     }
   ],
   "projections": [],
@@ -32,7 +32,7 @@
       "line": 0.5,
       "side": "FADE (under)",
       "historical_hit_rate_pct": 100.0,
-      "games_sampled": 11,
+      "games_sampled": 12,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
