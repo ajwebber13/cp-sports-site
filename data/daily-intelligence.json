@@ -1,26 +1,26 @@
 {
-  "date": "2026-08-01",
-  "generated_at": "2026-08-01T16:43:18.931145+00:00",
+  "date": "2026-08-02",
+  "generated_at": "2026-08-02T16:42:08.647987+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Las Vegas Aces @ Chicago Sky",
-      "pick": "Under 183.5",
-      "odds": -108,
-      "confidence": 94.8,
+      "game": "Connecticut Sun @ Dallas Wings",
+      "pick": "Dallas Wings -10.5",
+      "odds": -110,
+      "confidence": 98.1,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 42.4
+      "edge_pct": 45.7
     },
     {
       "sport": "mlb",
-      "game": "New York Yankees @ Chicago Cubs",
-      "pick": "Over 6.5",
-      "odds": -102,
-      "confidence": 82.2,
+      "game": "St. Louis Cardinals @ Toronto Blue Jays",
+      "pick": "Over 9.0",
+      "odds": 101,
+      "confidence": 85.9,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 31.7
+      "edge_pct": 36.1
     }
   ],
   "projections": [],
@@ -32,7 +32,7 @@
       "line": 0.5,
       "side": "FADE (under)",
       "historical_hit_rate_pct": 100.0,
-      "games_sampled": 13,
+      "games_sampled": 14,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
