@@ -1,41 +1,31 @@
 {
-  "date": "2026-08-02",
-  "generated_at": "2026-08-02T16:42:08.647987+00:00",
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T17:32:19.940853+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Connecticut Sun @ Dallas Wings",
-      "pick": "Dallas Wings -10.5",
-      "odds": -110,
-      "confidence": 98.1,
+      "game": "Seattle Storm @ New York Liberty",
+      "pick": "Under 181.5",
+      "odds": -105,
+      "confidence": 95.3,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 45.7
-    },
-    {
-      "sport": "mlb",
-      "game": "St. Louis Cardinals @ Toronto Blue Jays",
-      "pick": "Over 9.0",
-      "odds": 101,
-      "confidence": 85.9,
-      "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 36.1
+      "edge_pct": 42.9
     }
   ],
   "projections": [],
   "props": [
     {
-      "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 14,
+      "sport": "wnba",
+      "player": "Kelsey Plum",
+      "stat": "PRA",
+      "line": 21.5,
+      "side": "OVER",
+      "historical_hit_rate_pct": 91.7,
+      "games_sampled": 12,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
   ],
-  "parlay_eligible": false
+  "parlay_eligible": true
 }
