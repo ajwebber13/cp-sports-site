@@ -1,31 +1,41 @@
 {
-  "date": "2026-08-03",
-  "generated_at": "2026-08-03T17:32:19.940853+00:00",
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T17:26:00.532280+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Seattle Storm @ New York Liberty",
-      "pick": "Under 181.5",
-      "odds": -105,
-      "confidence": 95.3,
+      "game": "Toronto Tempo @ Golden State Valkyries",
+      "pick": "Golden State Valkyries -12.5",
+      "odds": -102,
+      "confidence": 94.3,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 42.9
+      "edge_pct": 41.9
+    },
+    {
+      "sport": "mlb",
+      "game": "Minnesota Twins @ Kansas City Royals",
+      "pick": "Kansas City Royals ML",
+      "odds": 123,
+      "confidence": 85.9,
+      "confidence_tier": "High",
+      "confidence_grade": "A",
+      "edge_pct": 41.1
     }
   ],
   "projections": [],
   "props": [
     {
-      "sport": "wnba",
-      "player": "Kelsey Plum",
-      "stat": "PRA",
-      "line": 21.5,
-      "side": "OVER",
-      "historical_hit_rate_pct": 91.7,
-      "games_sampled": 12,
+      "sport": "mlb",
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 15,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
   ],
-  "parlay_eligible": true
+  "parlay_eligible": false
 }
