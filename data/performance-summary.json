@@ -1,38 +1,38 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "308-232",
+      "value": "316-245",
       "source": "performance_tracker",
       "confidence": "high"
     },
     "win_rate_pct": {
-      "value": 57.0,
+      "value": 56.3,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "total_graded": {
-      "value": 540,
+      "value": 561,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 9.1,
+      "value": 7.7,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 46.77,
+      "value": 41.06,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 515,
+      "value": 536,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -43,9 +43,9 @@
     },
     "clv": {
       "value": {
-        "avg_clv_pct": 12.88,
-        "picks_used": 40,
-        "picks_skipped_no_clv": 500
+        "avg_clv_pct": 11.9,
+        "picks_used": 43,
+        "picks_skipped_no_clv": 518
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -55,12 +55,12 @@
     {
       "sport": "mlb",
       "record": {
-        "value": "211-168",
+        "value": "217-175",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 55.7,
+        "value": 55.4,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -68,12 +68,12 @@
     {
       "sport": "wnba",
       "record": {
-        "value": "92-64",
+        "value": "94-70",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 59.0,
+        "value": 57.3,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -96,12 +96,12 @@
     {
       "bucket": "90%+",
       "record": {
-        "value": "17-15",
+        "value": "18-16",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 53.1,
+        "value": 52.9,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -109,12 +109,12 @@
     {
       "bucket": "85-89%",
       "record": {
-        "value": "16-4",
+        "value": "16-5",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 80.0,
+        "value": 76.2,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -122,12 +122,12 @@
     {
       "bucket": "80-84%",
       "record": {
-        "value": "14-18",
+        "value": "15-18",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 43.8,
+        "value": 45.5,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -135,12 +135,12 @@
     {
       "bucket": "75-79%",
       "record": {
-        "value": "31-13",
+        "value": "32-14",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 70.5,
+        "value": 69.6,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -148,12 +148,12 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "150-146",
+        "value": "155-156",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 50.7,
+        "value": 49.8,
         "source": "performance_tracker",
         "confidence": "high"
       }
