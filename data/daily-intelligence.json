@@ -1,26 +1,26 @@
 {
-  "date": "2026-08-04",
-  "generated_at": "2026-08-04T17:26:00.532280+00:00",
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T17:15:43.592752+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Toronto Tempo @ Golden State Valkyries",
-      "pick": "Golden State Valkyries -12.5",
-      "odds": -102,
-      "confidence": 94.3,
+      "game": "Seattle Storm @ New York Liberty",
+      "pick": "Under 182.5",
+      "odds": -108,
+      "confidence": 95.9,
       "confidence_tier": "High",
       "confidence_grade": "A+",
-      "edge_pct": 41.9
+      "edge_pct": 43.5
     },
     {
       "sport": "mlb",
-      "game": "Minnesota Twins @ Kansas City Royals",
-      "pick": "Kansas City Royals ML",
-      "odds": 123,
-      "confidence": 85.9,
+      "game": "Tampa Bay Rays @ Colorado Rockies",
+      "pick": "Under 11.5",
+      "odds": -115,
+      "confidence": 90.0,
       "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 41.1
+      "confidence_grade": "A+",
+      "edge_pct": 36.5
     }
   ],
   "projections": [],
