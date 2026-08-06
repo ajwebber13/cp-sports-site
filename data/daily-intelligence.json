@@ -1,41 +1,8 @@
 {
-  "date": "2026-08-05",
-  "generated_at": "2026-08-05T17:15:43.592752+00:00",
-  "locks": [
-    {
-      "sport": "wnba",
-      "game": "Seattle Storm @ New York Liberty",
-      "pick": "Under 182.5",
-      "odds": -108,
-      "confidence": 95.9,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 43.5
-    },
-    {
-      "sport": "mlb",
-      "game": "Tampa Bay Rays @ Colorado Rockies",
-      "pick": "Under 11.5",
-      "odds": -115,
-      "confidence": 90.0,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 36.5
-    }
-  ],
+  "date": "2026-08-06",
+  "generated_at": "2026-08-06T21:52:30.464846+00:00",
+  "locks": [],
   "projections": [],
-  "props": [
-    {
-      "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 15,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
-    }
-  ],
+  "props": [],
   "parlay_eligible": false
 }
