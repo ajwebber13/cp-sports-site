@@ -1,8 +1,41 @@
 {
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06T21:52:30.464846+00:00",
-  "locks": [],
+  "date": "2026-08-07",
+  "generated_at": "2026-08-07T16:37:52.479295+00:00",
+  "locks": [
+    {
+      "sport": "wnba",
+      "game": "Los Angeles Sparks @ Minnesota Lynx",
+      "pick": "Under 187.5",
+      "odds": -115,
+      "confidence": 96.7,
+      "confidence_tier": "High",
+      "confidence_grade": "A+",
+      "edge_pct": 44.3
+    },
+    {
+      "sport": "mlb",
+      "game": "Los Angeles Angels @ Miami Marlins",
+      "pick": "Miami Marlins -1.5",
+      "odds": 134,
+      "confidence": 94.3,
+      "confidence_tier": "High",
+      "confidence_grade": "A+",
+      "edge_pct": 51.6
+    }
+  ],
   "projections": [],
-  "props": [],
+  "props": [
+    {
+      "sport": "mlb",
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 15,
+      "confidence_tier": "High",
+      "confidence_grade": "A+"
+    }
+  ],
   "parlay_eligible": false
 }
