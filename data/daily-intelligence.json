@@ -1,19 +1,17 @@
 {
-  "date": "2026-08-08",
-  "generated_at": "2026-08-08T16:16:19.035708+00:00",
-  "locks": [
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T16:18:13.175443+00:00",
+  "locks": [],
+  "projections": [
     {
       "sport": "wnba",
-      "game": "Indiana Fever @ Chicago Sky",
-      "pick": "Under 190.5",
-      "odds": -110,
-      "confidence": 97.9,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 45.5
+      "game": "Phoenix Mercury @ Washington Mystics",
+      "favorite": "Washington Mystics -1.5",
+      "win_probability": 69.5,
+      "confidence_tier": "Medium",
+      "confidence_grade": "C"
     }
   ],
-  "projections": [],
   "props": [
     {
       "sport": "mlb",
