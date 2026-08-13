@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -14,7 +14,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1869.3,
+          "value": 1873.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -89,15 +89,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 98.2,
+          "value": 98.3,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
       "power_score": 76.0,
       "trend": {
-        "direction": "up",
-        "movement": 3
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -106,57 +106,6 @@
     },
     {
       "rank": 3,
-      "team": "Golden State Valkyries",
-      "slug": "golden-state-valkyries",
-      "record": {
-        "value": "14-7",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1673.2,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 85.2,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 100.0,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 15.6,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 72.1,
-      "trend": {
-        "direction": "flat",
-        "movement": 0
-      },
-      "strengths": [
-        "Currently riding a 4-game win streak",
-        "Top-tier defensive efficiency (real defense-rating data)"
-      ]
-    },
-    {
-      "rank": 4,
       "team": "Washington Mystics",
       "slug": "washington-mystics",
       "record": {
@@ -191,19 +140,70 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 68.3,
+          "value": 69.7,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 72.1,
+      "power_score": 72.2,
       "trend": {
-        "direction": "down",
-        "movement": -2
+        "direction": "up",
+        "movement": 1
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
         "Currently riding a 2-game win streak"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Golden State Valkyries",
+      "slug": "golden-state-valkyries",
+      "record": {
+        "value": "14-7",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1685.1,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 85.2,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 100.0,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 10.5,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 72.0,
+      "trend": {
+        "direction": "down",
+        "movement": -1
+      },
+      "strengths": [
+        "Currently riding a 4-game win streak",
+        "Top-tier defensive efficiency (real defense-rating data)"
       ]
     },
     {
@@ -242,15 +242,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 58.3,
+          "value": 60.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 68.5,
+      "power_score": 68.8,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -293,15 +293,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 28.7,
+          "value": 31.9,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 63.9,
+      "power_score": 64.2,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 2-game win streak"
@@ -318,7 +318,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1490.1,
+          "value": 1500.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -343,15 +343,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 69.3,
+          "value": 57.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 61.5,
+      "power_score": 60.5,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -394,12 +394,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 24.2,
+          "value": 27.6,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 53.6,
+      "power_score": 54.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -444,12 +444,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 61.2,
+          "value": 62.9,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 40.5,
+      "power_score": 41.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -470,7 +470,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1328.6,
+          "value": 1324.3,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -495,12 +495,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 84.2,
+          "value": 100.0,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 33.1,
+      "power_score": 35.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -551,7 +551,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 29.2,
+      "power_score": 29.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -572,7 +572,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1314.0,
+          "value": 1302.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -597,17 +597,18 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 44.8,
+          "value": 56.0,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 27.2,
+      "power_score": 28.7,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
+        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
         "Currently riding a 1-game loss streak"
       ]
     },
@@ -622,7 +623,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1187.6,
+          "value": 1177.1,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -654,8 +655,8 @@
       },
       "power_score": 26.7,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -703,10 +704,10 @@
           "confidence": "high"
         }
       },
-      "power_score": 25.1,
+      "power_score": 25.6,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -749,15 +750,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 31.3,
+          "value": 34.4,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 24.5,
+      "power_score": 25.4,
       "trend": {
-        "direction": "down",
-        "movement": -3
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 1-game win streak"
