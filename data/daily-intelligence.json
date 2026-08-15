@@ -1,40 +1,30 @@
 {
-  "date": "2026-08-14",
-  "generated_at": "2026-08-14T16:37:47.432333+00:00",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T16:08:41.269575+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Portland Fire @ Seattle Storm",
-      "pick": "Under 180.5",
-      "odds": -108,
-      "confidence": 98.1,
+      "game": "Minnesota Lynx @ Las Vegas Aces",
+      "pick": "Under 182.5",
+      "odds": -115,
+      "confidence": 84.8,
       "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 45.7
-    },
-    {
-      "sport": "mlb",
-      "game": "Chicago White Sox @ Detroit Tigers",
-      "pick": "Under 8.5",
-      "odds": -102,
-      "confidence": 95.2,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 44.7
+      "confidence_grade": "A",
+      "edge_pct": 32.4
     }
   ],
   "projections": [],
   "props": [
     {
       "sport": "mlb",
-      "player": "Michael King",
-      "stat": "STRIKEOUTS",
-      "line": 3.5,
-      "side": "OVER",
-      "historical_hit_rate_pct": 86.4,
-      "games_sampled": 22,
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 15,
       "confidence_tier": "High",
-      "confidence_grade": "A"
+      "confidence_grade": "A+"
     }
   ],
   "parlay_eligible": false
