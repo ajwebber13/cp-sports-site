@@ -1,16 +1,16 @@
 {
-  "date": "2026-08-15",
-  "generated_at": "2026-08-15T16:08:41.269575+00:00",
+  "date": "2026-08-16",
+  "generated_at": "2026-08-16T16:09:08.761900+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Minnesota Lynx @ Las Vegas Aces",
-      "pick": "Under 182.5",
-      "odds": -115,
-      "confidence": 84.8,
+      "game": "Chicago Sky @ Seattle Storm",
+      "pick": "Under 177.5",
+      "odds": -112,
+      "confidence": 96.7,
       "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 32.4
+      "confidence_grade": "A+",
+      "edge_pct": 44.3
     }
   ],
   "projections": [],
