@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -115,7 +115,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1685.1,
+          "value": 1705.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -140,12 +140,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 1.5,
+          "value": 2.6,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 69.4,
+      "power_score": 70.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -317,7 +317,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1485.9,
+          "value": 1466.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -342,7 +342,7 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 64.9,
+          "value": 71.9,
           "source": "ranking_engine",
           "confidence": "high"
         }
@@ -450,8 +450,8 @@
       },
       "power_score": 36.4,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -501,8 +501,8 @@
       },
       "power_score": 36.2,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -552,8 +552,8 @@
       },
       "power_score": 27.1,
       "trend": {
-        "direction": "up",
-        "movement": 2
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -653,8 +653,8 @@
       },
       "power_score": 26.7,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
@@ -704,8 +704,8 @@
       },
       "power_score": 26.4,
       "trend": {
-        "direction": "down",
-        "movement": -3
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
