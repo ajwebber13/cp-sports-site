@@ -1,16 +1,26 @@
 {
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17T16:11:25.870074+00:00",
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T16:15:44.945804+00:00",
   "locks": [
     {
       "sport": "wnba",
-      "game": "Dallas Wings @ Golden State Valkyries",
-      "pick": "Golden State Valkyries -6.5",
-      "odds": -115,
-      "confidence": 86.7,
+      "game": "Indiana Fever @ Toronto Tempo",
+      "pick": "Under 190.5",
+      "odds": -105,
+      "confidence": 96.1,
+      "confidence_tier": "High",
+      "confidence_grade": "A+",
+      "edge_pct": 43.7
+    },
+    {
+      "sport": "mlb",
+      "game": "Washington Nationals @ Texas Rangers",
+      "pick": "Texas Rangers ML",
+      "odds": -148,
+      "confidence": 84.4,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 34.3
+      "edge_pct": 24.7
     }
   ],
   "projections": [],
