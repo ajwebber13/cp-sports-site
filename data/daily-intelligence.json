@@ -1,29 +1,17 @@
 {
-  "date": "2026-08-18",
-  "generated_at": "2026-08-18T16:15:44.945804+00:00",
-  "locks": [
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T16:15:40.755463+00:00",
+  "locks": [],
+  "projections": [
     {
       "sport": "wnba",
-      "game": "Indiana Fever @ Toronto Tempo",
-      "pick": "Under 190.5",
-      "odds": -105,
-      "confidence": 96.1,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 43.7
-    },
-    {
-      "sport": "mlb",
-      "game": "Washington Nationals @ Texas Rangers",
-      "pick": "Texas Rangers ML",
-      "odds": -148,
-      "confidence": 84.4,
-      "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 24.7
+      "game": "Minnesota Lynx @ Golden State Valkyries",
+      "favorite": "Minnesota Lynx -2.5",
+      "win_probability": 63.8,
+      "confidence_tier": "Low",
+      "confidence_grade": "C"
     }
   ],
-  "projections": [],
   "props": [
     {
       "sport": "mlb",
