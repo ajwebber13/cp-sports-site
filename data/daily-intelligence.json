@@ -1,17 +1,19 @@
 {
-  "date": "2026-08-19",
-  "generated_at": "2026-08-19T16:15:40.755463+00:00",
-  "locks": [],
-  "projections": [
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T16:18:31.613157+00:00",
+  "locks": [
     {
       "sport": "wnba",
-      "game": "Minnesota Lynx @ Golden State Valkyries",
-      "favorite": "Minnesota Lynx -2.5",
-      "win_probability": 63.8,
-      "confidence_tier": "Low",
-      "confidence_grade": "C"
+      "game": "Connecticut Sun @ Las Vegas Aces",
+      "pick": "Las Vegas Aces -13.5",
+      "odds": -105,
+      "confidence": 95.5,
+      "confidence_tier": "High",
+      "confidence_grade": "A+",
+      "edge_pct": 43.1
     }
   ],
+  "projections": [],
   "props": [
     {
       "sport": "mlb",
