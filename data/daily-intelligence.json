@@ -1,17 +1,8 @@
 {
-  "date": "2026-08-22",
-  "generated_at": "2026-08-22T16:08:21.132776+00:00",
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23T16:09:46.023637+00:00",
   "locks": [],
-  "projections": [
-    {
-      "sport": "wnba",
-      "game": "Connecticut Sun @ Los Angeles Sparks",
-      "favorite": "Los Angeles Sparks -4.5",
-      "win_probability": 61.5,
-      "confidence_tier": "Low",
-      "confidence_grade": "C"
-    }
-  ],
+  "projections": [],
   "props": [
     {
       "sport": "mlb",
