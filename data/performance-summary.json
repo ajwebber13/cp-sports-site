@@ -1,11 +1,11 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "598-544",
+      "value": "601-546",
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -15,7 +15,7 @@
       "confidence": "high"
     },
     "total_graded": {
-      "value": 1142,
+      "value": 1147,
       "source": "performance_tracker",
       "confidence": "high"
     }
@@ -27,12 +27,12 @@
       "confidence": "high"
     },
     "profit_units": {
-      "value": 0.76,
+      "value": 1.48,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 1117,
+      "value": 1122,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -43,9 +43,9 @@
     },
     "clv": {
       "value": {
-        "avg_clv_pct": 5.99,
-        "picks_used": 92,
-        "picks_skipped_no_clv": 1050
+        "avg_clv_pct": 6.28,
+        "picks_used": 94,
+        "picks_skipped_no_clv": 1053
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -68,12 +68,12 @@
     {
       "sport": "wnba",
       "record": {
-        "value": "167-143",
+        "value": "170-145",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 53.9,
+        "value": 54.0,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -148,12 +148,12 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "336-368",
+        "value": "339-370",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 47.7,
+        "value": 47.8,
         "source": "performance_tracker",
         "confidence": "high"
       }
