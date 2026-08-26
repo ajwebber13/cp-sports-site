@@ -1,31 +1,8 @@
 {
-  "date": "2026-08-25",
-  "generated_at": "2026-08-25T16:21:42.013510+00:00",
-  "locks": [
-    {
-      "sport": "cfb",
-      "game": "Hawaii @ Stanford",
-      "pick": "Stanford ML",
-      "odds": -403,
-      "confidence": 80.1,
-      "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 30.1
-    }
-  ],
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T16:39:54.010632+00:00",
+  "locks": [],
   "projections": [],
-  "props": [
-    {
-      "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 15,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
-    }
-  ],
+  "props": [],
   "parlay_eligible": false
 }
