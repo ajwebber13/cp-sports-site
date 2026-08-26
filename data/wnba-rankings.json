@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-08-25",
+  "updated": "2026-08-26",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -217,7 +217,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1548.6,
+          "value": 1569.7,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -242,18 +242,17 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 49.9,
+          "value": 41.7,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 59.7,
+      "power_score": 59.5,
       "trend": {
         "direction": "flat",
         "movement": 0
       },
       "strengths": [
-        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
         "Currently riding a 4-game win streak"
       ]
     },
@@ -562,56 +561,6 @@
     },
     {
       "rank": 12,
-      "team": "Portland Fire",
-      "slug": "portland-fire",
-      "record": {
-        "value": "8-12",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1305.2,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 37.5,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 14.1,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 44.3,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 25.8,
-      "trend": {
-        "direction": "up",
-        "movement": 1
-      },
-      "strengths": [
-        "Currently riding a 3-game loss streak"
-      ]
-    },
-    {
-      "rank": 13,
       "team": "Seattle Storm",
       "slug": "seattle-storm",
       "record": {
@@ -653,12 +602,63 @@
       },
       "power_score": 25.6,
       "trend": {
+        "direction": "up",
+        "movement": 1
+      },
+      "strengths": [
+        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
+        "Currently riding a 1-game loss streak"
+      ]
+    },
+    {
+      "rank": 13,
+      "team": "Portland Fire",
+      "slug": "portland-fire",
+      "record": {
+        "value": "8-12",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1284.2,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 37.5,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 14.1,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 47.0,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 25.1,
+      "trend": {
         "direction": "down",
         "movement": -1
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
-        "Currently riding a 1-game loss streak"
+        "Currently riding a 3-game loss streak"
       ]
     },
     {
