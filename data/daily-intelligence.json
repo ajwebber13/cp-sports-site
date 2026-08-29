@@ -1,28 +1,40 @@
 {
-  "date": "2026-08-28",
-  "generated_at": "2026-08-29T00:10:52.793663+00:00",
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T18:56:27.268774+00:00",
   "locks": [
     {
       "sport": "cfb",
-      "game": "Hawaii @ Stanford",
+      "game": "Miami @ Stanford",
       "pick": "Stanford ML",
-      "odds": -400,
-      "confidence": 80.0,
+      "odds": -405,
+      "confidence": 80.2,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 30.0
+      "edge_pct": 30.2
     }
   ],
   "projections": [
     {
       "sport": "wnba",
       "game": "Connecticut Sun @ Indiana Fever",
-      "favorite": "Indiana Fever -17.5",
-      "win_probability": 78.7,
+      "favorite": "Indiana Fever ML",
+      "win_probability": 72.0,
       "confidence_tier": "Medium",
       "confidence_grade": "B"
     }
   ],
-  "props": [],
+  "props": [
+    {
+      "sport": "mlb",
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 15,
+      "confidence_tier": "High",
+      "confidence_grade": "A+"
+    }
+  ],
   "parlay_eligible": false
 }
