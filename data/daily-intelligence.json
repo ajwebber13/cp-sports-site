@@ -1,31 +1,28 @@
 {
-  "date": "2026-08-27",
-  "generated_at": "2026-08-28T00:39:13.194724+00:00",
+  "date": "2026-08-28",
+  "generated_at": "2026-08-29T00:10:52.793663+00:00",
   "locks": [
     {
       "sport": "cfb",
       "game": "Hawaii @ Stanford",
       "pick": "Stanford ML",
-      "odds": -410,
-      "confidence": 80.4,
+      "odds": -400,
+      "confidence": 80.0,
       "confidence_tier": "High",
       "confidence_grade": "A",
-      "edge_pct": 30.4
+      "edge_pct": 30.0
     }
   ],
-  "projections": [],
-  "props": [
+  "projections": [
     {
       "sport": "wnba",
-      "player": "Kelsey Plum",
-      "stat": "PA",
-      "line": 16.5,
-      "side": "OVER",
-      "historical_hit_rate_pct": 91.7,
-      "games_sampled": 12,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
+      "game": "Connecticut Sun @ Indiana Fever",
+      "favorite": "Indiana Fever -17.5",
+      "win_probability": 78.7,
+      "confidence_tier": "Medium",
+      "confidence_grade": "B"
     }
   ],
+  "props": [],
   "parlay_eligible": false
 }
