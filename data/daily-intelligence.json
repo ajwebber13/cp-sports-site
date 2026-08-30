@@ -1,24 +1,13 @@
 {
-  "date": "2026-08-29",
-  "generated_at": "2026-08-29T18:56:27.268774+00:00",
-  "locks": [
-    {
-      "sport": "cfb",
-      "game": "Miami @ Stanford",
-      "pick": "Stanford ML",
-      "odds": -405,
-      "confidence": 80.2,
-      "confidence_tier": "High",
-      "confidence_grade": "A",
-      "edge_pct": 30.2
-    }
-  ],
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T18:51:50.237346+00:00",
+  "locks": [],
   "projections": [
     {
       "sport": "wnba",
-      "game": "Connecticut Sun @ Indiana Fever",
-      "favorite": "Indiana Fever ML",
-      "win_probability": 72.0,
+      "game": "Connecticut Sun @ Dallas Wings",
+      "favorite": "Dallas Wings -14.5",
+      "win_probability": 75.0,
       "confidence_tier": "Medium",
       "confidence_grade": "B"
     }
