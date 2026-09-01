@@ -1,7 +1,18 @@
 {
-  "date": "2026-08-31",
-  "generated_at": "2026-08-31T21:09:09.280918+00:00",
-  "locks": [],
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T18:54:21.635870+00:00",
+  "locks": [
+    {
+      "sport": "cfb",
+      "game": "North Texas @ Indiana",
+      "pick": "Indiana -40.5",
+      "odds": -110,
+      "confidence": 99.6,
+      "confidence_tier": "High",
+      "confidence_grade": "A+",
+      "edge_pct": 49.6
+    }
+  ],
   "projections": [],
   "props": [
     {
