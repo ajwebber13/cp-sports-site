@@ -1,28 +1,17 @@
 {
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T19:00:12.189773+00:00",
-  "locks": [
-    {
-      "sport": "cfb",
-      "game": "North Texas @ Indiana",
-      "pick": "Indiana -40.5",
-      "odds": -110,
-      "confidence": 99.6,
-      "confidence_tier": "High",
-      "confidence_grade": "A+",
-      "edge_pct": 49.6
-    }
-  ],
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T18:55:19.895784+00:00",
+  "locks": [],
   "projections": [],
   "props": [
     {
       "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 15,
+      "player": "Jose Soriano",
+      "stat": "STRIKEOUTS",
+      "line": 3.5,
+      "side": "OVER",
+      "historical_hit_rate_pct": 90.5,
+      "games_sampled": 21,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
