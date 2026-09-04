@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-03",
-  "generated_at": "2026-09-03T18:55:19.895784+00:00",
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T18:36:20.351775+00:00",
   "locks": [],
   "projections": [],
   "props": [
     {
       "sport": "mlb",
-      "player": "Jose Soriano",
-      "stat": "STRIKEOUTS",
-      "line": 3.5,
-      "side": "OVER",
-      "historical_hit_rate_pct": 90.5,
-      "games_sampled": 21,
+      "player": "Tommy White",
+      "stat": "RBIS",
+      "line": 0.5,
+      "side": "FADE (under)",
+      "historical_hit_rate_pct": 100.0,
+      "games_sampled": 15,
       "confidence_tier": "High",
       "confidence_grade": "A+"
     }
