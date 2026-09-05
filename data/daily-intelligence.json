@@ -1,20 +1,8 @@
 {
-  "date": "2026-09-04",
-  "generated_at": "2026-09-04T18:36:20.351775+00:00",
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T17:44:56.762231+00:00",
   "locks": [],
   "projections": [],
-  "props": [
-    {
-      "sport": "mlb",
-      "player": "Tommy White",
-      "stat": "RBIS",
-      "line": 0.5,
-      "side": "FADE (under)",
-      "historical_hit_rate_pct": 100.0,
-      "games_sampled": 15,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
-    }
-  ],
+  "props": [],
   "parlay_eligible": false
 }
