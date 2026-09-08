@@ -1,11 +1,11 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "688-630",
+      "value": "689-631",
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -15,7 +15,7 @@
       "confidence": "high"
     },
     "total_graded": {
-      "value": 1318,
+      "value": 1320,
       "source": "performance_tracker",
       "confidence": "high"
     }
@@ -27,12 +27,12 @@
       "confidence": "high"
     },
     "profit_units": {
-      "value": -8.24,
+      "value": -8.37,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 1293,
+      "value": 1295,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 7.8,
         "picks_used": 99,
-        "picks_skipped_no_clv": 1219
+        "picks_skipped_no_clv": 1221
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -81,7 +81,7 @@
     {
       "sport": "cfb",
       "record": {
-        "value": "58-71",
+        "value": "59-72",
         "source": "performance_tracker",
         "confidence": "high"
       },
@@ -122,12 +122,12 @@
     {
       "bucket": "85-89%",
       "record": {
-        "value": "34-17",
+        "value": "35-17",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 66.7,
+        "value": 67.3,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -161,7 +161,7 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "403-436",
+        "value": "403-437",
         "source": "performance_tracker",
         "confidence": "high"
       },
