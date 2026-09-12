@@ -1,38 +1,38 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "343-298",
+      "value": "344-298",
       "source": "performance_tracker",
       "confidence": "high"
     },
     "win_rate_pct": {
-      "value": 53.5,
+      "value": 53.6,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "total_graded": {
-      "value": 641,
+      "value": 642,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 5.7,
+      "value": 5.8,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 34.99,
+      "value": 35.9,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 616,
+      "value": 617,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 7.8,
         "picks_used": 99,
-        "picks_skipped_no_clv": 1245
+        "picks_skipped_no_clv": 1246
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -81,12 +81,12 @@
     {
       "sport": "cfb",
       "record": {
-        "value": "17-20",
+        "value": "18-20",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 45.9,
+        "value": 47.4,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -161,7 +161,7 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "410-445",
+        "value": "411-445",
         "source": "performance_tracker",
         "confidence": "high"
       },
