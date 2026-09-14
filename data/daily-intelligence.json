@@ -1,7 +1,18 @@
 {
-  "date": "2026-09-13",
-  "generated_at": "2026-09-13T18:22:50.177424+00:00",
-  "locks": [],
+  "date": "2026-09-14",
+  "generated_at": "2026-09-14T19:58:06.017654+00:00",
+  "locks": [
+    {
+      "sport": "nfl",
+      "game": "Denver Broncos @ Kansas City Chiefs",
+      "pick": "Under 43.5",
+      "odds": -110,
+      "confidence": 83.3,
+      "confidence_tier": "High",
+      "confidence_grade": "A",
+      "edge_pct": 33.3
+    }
+  ],
   "projections": [],
   "props": [],
   "parlay_eligible": false
