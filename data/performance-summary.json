@@ -1,38 +1,38 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "351-304",
+      "value": "352-304",
       "source": "performance_tracker",
       "confidence": "high"
     },
     "win_rate_pct": {
-      "value": 53.6,
+      "value": 53.7,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "total_graded": {
-      "value": 655,
+      "value": 656,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 6.0,
+      "value": 6.2,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 37.5,
+      "value": 38.88,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 630,
+      "value": 631,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 7.8,
         "picks_used": 99,
-        "picks_skipped_no_clv": 1259
+        "picks_skipped_no_clv": 1260
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -55,12 +55,12 @@
     {
       "sport": "mlb",
       "record": {
-        "value": "217-214",
+        "value": "218-214",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 50.3,
+        "value": 50.5,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -174,7 +174,7 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "417-449",
+        "value": "418-449",
         "source": "performance_tracker",
         "confidence": "high"
       },
