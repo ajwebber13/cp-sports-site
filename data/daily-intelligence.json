@@ -1,17 +1,8 @@
 {
-  "date": "2026-09-17",
-  "generated_at": "2026-09-17T19:20:51.476241+00:00",
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T18:40:08.745767+00:00",
   "locks": [],
-  "projections": [
-    {
-      "sport": "wnba",
-      "game": "Connecticut Sun @ Atlanta Dream",
-      "favorite": "Atlanta Dream ML",
-      "win_probability": 94.9,
-      "confidence_tier": "High",
-      "confidence_grade": "A+"
-    }
-  ],
+  "projections": [],
   "props": [],
   "parlay_eligible": false
 }
