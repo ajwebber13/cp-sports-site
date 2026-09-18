@@ -1,38 +1,38 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "352-304",
+      "value": "354-307",
       "source": "performance_tracker",
       "confidence": "high"
     },
     "win_rate_pct": {
-      "value": 53.7,
+      "value": 53.6,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "total_graded": {
-      "value": 656,
+      "value": 661,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 6.2,
+      "value": 5.9,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 38.88,
+      "value": 37.7,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 631,
+      "value": 636,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 7.8,
         "picks_used": 99,
-        "picks_skipped_no_clv": 1260
+        "picks_skipped_no_clv": 1267
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -68,12 +68,12 @@
     {
       "sport": "wnba",
       "record": {
-        "value": "107-68",
+        "value": "109-71",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 61.1,
+        "value": 60.6,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -174,12 +174,12 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "418-449",
+        "value": "420-454",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "actual_win_rate_pct": {
-        "value": 48.2,
+        "value": 48.1,
         "source": "performance_tracker",
         "confidence": "high"
       }
