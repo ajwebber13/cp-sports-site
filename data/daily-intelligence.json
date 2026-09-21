@@ -1,8 +1,17 @@
 {
-  "date": "2026-09-20",
-  "generated_at": "2026-09-20T18:20:15.656610+00:00",
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T20:08:51.339532+00:00",
   "locks": [],
-  "projections": [],
+  "projections": [
+    {
+      "sport": "wnba",
+      "game": "Atlanta Dream @ New York Liberty",
+      "favorite": "New York Liberty +1.5",
+      "win_probability": 55.3,
+      "confidence_tier": "Low",
+      "confidence_grade": "C"
+    }
+  ],
   "props": [],
   "parlay_eligible": false
 }
