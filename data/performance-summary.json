@@ -1,11 +1,11 @@
 {
   "entity": "performance_summary",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "model_version": "v1.0",
   "note": "Aggregate performance only \u2014 no individual picks, lines, odds, or bet dates are exported here. See performance_tracker.py for the private, full-detail source this was generated from.",
   "overall": {
     "record": {
-      "value": "354-311",
+      "value": "355-312",
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -15,24 +15,24 @@
       "confidence": "high"
     },
     "total_graded": {
-      "value": 665,
+      "value": 667,
       "source": "performance_tracker",
       "confidence": "high"
     }
   },
   "roi": {
     "roi_pct": {
-      "value": 5.3,
+      "value": 5.2,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "profit_units": {
-      "value": 33.7,
+      "value": 33.61,
       "source": "performance_tracker",
       "confidence": "high"
     },
     "picks_used": {
-      "value": 640,
+      "value": 642,
       "source": "performance_tracker",
       "confidence": "high"
     },
@@ -45,7 +45,7 @@
       "value": {
         "avg_clv_pct": 7.8,
         "picks_used": 99,
-        "picks_skipped_no_clv": 1271
+        "picks_skipped_no_clv": 1273
       },
       "source": "performance_tracker",
       "confidence": "high"
@@ -68,12 +68,12 @@
     {
       "sport": "wnba",
       "record": {
-        "value": "109-72",
+        "value": "110-73",
         "source": "performance_tracker",
         "confidence": "high"
       },
       "win_rate_pct": {
-        "value": 60.2,
+        "value": 60.1,
         "source": "performance_tracker",
         "confidence": "high"
       }
@@ -174,7 +174,7 @@
     {
       "bucket": "<75%",
       "record": {
-        "value": "420-458",
+        "value": "421-459",
         "source": "performance_tracker",
         "confidence": "high"
       },
