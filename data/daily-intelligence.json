@@ -1,17 +1,8 @@
 {
-  "date": "2026-09-24",
-  "generated_at": "2026-09-24T19:31:55.641680+00:00",
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T19:35:50.138006+00:00",
   "locks": [],
-  "projections": [
-    {
-      "sport": "wnba",
-      "game": "Chicago Sky @ Washington Mystics",
-      "favorite": "Washington Mystics ML",
-      "win_probability": 85.7,
-      "confidence_tier": "High",
-      "confidence_grade": "A"
-    }
-  ],
+  "projections": [],
   "props": [],
   "parlay_eligible": false
 }
