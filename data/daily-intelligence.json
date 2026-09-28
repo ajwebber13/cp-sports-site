@@ -1,17 +1,8 @@
 {
-  "date": "2026-09-27",
-  "generated_at": "2026-09-27T19:20:56.824478+00:00",
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T21:25:55.637410+00:00",
   "locks": [],
-  "projections": [
-    {
-      "sport": "wnba",
-      "game": "New York Liberty @ Minnesota Lynx",
-      "favorite": "Minnesota Lynx ML",
-      "win_probability": 76.5,
-      "confidence_tier": "Medium",
-      "confidence_grade": "B"
-    }
-  ],
+  "projections": [],
   "props": [],
   "parlay_eligible": false
 }
