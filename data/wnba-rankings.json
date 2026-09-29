@@ -1,6 +1,6 @@
 {
   "sport": "wnba",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "note": "Real data as of this export \u2014 elo, form, schedule_strength, power_score, and record are computed from live backend data (ranking_engine.py and wnba_game_results.py). defense is real only where noted per-team (WNBA has a mapped efficiency stat, not every team has enough sample yet). offense and rebounding remain placeholder \u2014 no backend source exists yet.",
   "rankings": [
     {
@@ -14,7 +14,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1723.5,
+          "value": 1607.5,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -39,12 +39,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 76.0,
+          "value": 82.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 82.8,
+      "power_score": 76.8,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -56,56 +56,6 @@
     },
     {
       "rank": 2,
-      "team": "Washington Mystics",
-      "slug": "washington-mystics",
-      "record": {
-        "value": "10-9",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1857.1,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 60.0,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 72.3,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 53.2,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 75.4,
-      "trend": {
-        "direction": "flat",
-        "movement": 0
-      },
-      "strengths": [
-        "Currently riding a 2-game win streak"
-      ]
-    },
-    {
-      "rank": 3,
       "team": "Atlanta Dream",
       "slug": "atlanta-dream",
       "record": {
@@ -115,7 +65,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1901.9,
+          "value": 1961.6,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -140,12 +90,12 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 17.6,
+          "value": 31.6,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 72.9,
+      "power_score": 75.0,
       "trend": {
         "direction": "up",
         "movement": 1
@@ -155,57 +105,7 @@
       ]
     },
     {
-      "rank": 4,
-      "team": "Las Vegas Aces",
-      "slug": "las-vegas-aces",
-      "record": {
-        "value": "15-7",
-        "source": "team_game_results",
-        "confidence": "high"
-      },
-      "ratings": {
-        "elo": {
-          "value": 1816.7,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "form": {
-          "value": 87.9,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "offense": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "defense": {
-          "value": 52.7,
-          "source": "ranking_engine",
-          "confidence": "high"
-        },
-        "rebounding": {
-          "value": null,
-          "source": "placeholder",
-          "confidence": "low"
-        },
-        "schedule_strength": {
-          "value": 27.7,
-          "source": "ranking_engine",
-          "confidence": "high"
-        }
-      },
-      "power_score": 72.8,
-      "trend": {
-        "direction": "down",
-        "movement": -1
-      },
-      "strengths": [
-        "Currently riding a 1-game loss streak"
-      ]
-    },
-    {
-      "rank": 5,
+      "rank": 3,
       "team": "New York Liberty",
       "slug": "new-york-liberty",
       "record": {
@@ -215,7 +115,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1645.3,
+          "value": 1761.2,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -240,18 +140,119 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 88.6,
+          "value": 93.5,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 70.9,
+      "power_score": 74.7,
       "trend": {
-        "direction": "flat",
-        "movement": 0
+        "direction": "up",
+        "movement": 2
       },
       "strengths": [
         "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
+        "Currently riding a 1-game loss streak"
+      ]
+    },
+    {
+      "rank": 4,
+      "team": "Washington Mystics",
+      "slug": "washington-mystics",
+      "record": {
+        "value": "10-9",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1797.5,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 60.0,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 72.3,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 69.5,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 72.9,
+      "trend": {
+        "direction": "down",
+        "movement": -2
+      },
+      "strengths": [
+        "Faced a schedule harder than average \u2014 Power Score holds up despite the tougher slate",
+        "Currently riding a 2-game win streak"
+      ]
+    },
+    {
+      "rank": 5,
+      "team": "Las Vegas Aces",
+      "slug": "las-vegas-aces",
+      "record": {
+        "value": "15-7",
+        "source": "team_game_results",
+        "confidence": "high"
+      },
+      "ratings": {
+        "elo": {
+          "value": 1852.6,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "form": {
+          "value": 87.9,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "offense": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "defense": {
+          "value": 52.7,
+          "source": "ranking_engine",
+          "confidence": "high"
+        },
+        "rebounding": {
+          "value": null,
+          "source": "placeholder",
+          "confidence": "low"
+        },
+        "schedule_strength": {
+          "value": 31.9,
+          "source": "ranking_engine",
+          "confidence": "high"
+        }
+      },
+      "power_score": 72.7,
+      "trend": {
+        "direction": "down",
+        "movement": -1
+      },
+      "strengths": [
         "Currently riding a 1-game loss streak"
       ]
     },
@@ -266,7 +267,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1555.1,
+          "value": 1625.4,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -296,7 +297,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 65.5,
+      "power_score": 67.0,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -317,7 +318,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1637.9,
+          "value": 1602.0,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -342,15 +343,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 24.0,
+          "value": 36.2,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 56.2,
+      "power_score": 54.7,
       "trend": {
-        "direction": "up",
-        "movement": 1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 2-game win streak"
@@ -367,7 +368,7 @@
       },
       "ratings": {
         "elo": {
-          "value": 1523.2,
+          "value": 1452.8,
           "source": "ranking_engine",
           "confidence": "high"
         },
@@ -392,15 +393,15 @@
           "confidence": "low"
         },
         "schedule_strength": {
-          "value": 0.0,
+          "value": 1.8,
           "source": "ranking_engine",
           "confidence": "high"
         }
       },
-      "power_score": 56.1,
+      "power_score": 52.0,
       "trend": {
-        "direction": "down",
-        "movement": -1
+        "direction": "flat",
+        "movement": 0
       },
       "strengths": [
         "Currently riding a 4-game win streak"
@@ -447,7 +448,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 49.6,
+      "power_score": 48.4,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -498,7 +499,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 41.2,
+      "power_score": 40.2,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -549,7 +550,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 35.9,
+      "power_score": 34.9,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -599,7 +600,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 31.6,
+      "power_score": 30.7,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -649,7 +650,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 31.1,
+      "power_score": 30.6,
       "trend": {
         "direction": "flat",
         "movement": 0
@@ -700,7 +701,7 @@
           "confidence": "high"
         }
       },
-      "power_score": 29.1,
+      "power_score": 28.8,
       "trend": {
         "direction": "flat",
         "movement": 0
