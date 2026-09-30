@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-29",
-  "generated_at": "2026-09-29T20:17:08.234075+00:00",
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T20:21:35.960400+00:00",
   "locks": [],
   "projections": [
     {
       "sport": "wnba",
-      "game": "Las Vegas Aces @ Indiana Fever",
-      "favorite": "Indiana Fever -1.5",
+      "game": "Atlanta Dream @ Washington Mystics",
+      "favorite": "Washington Mystics +3.5",
       "win_probability": 55.3,
       "confidence_tier": "Low",
       "confidence_grade": "C"
