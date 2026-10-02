@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-01",
-  "generated_at": "2026-10-01T20:36:38.077489+00:00",
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T20:11:48.166358+00:00",
   "locks": [],
   "projections": [
     {
       "sport": "wnba",
-      "game": "Indiana Fever @ Las Vegas Aces",
-      "favorite": "Las Vegas Aces -4.5",
-      "win_probability": 55.3,
-      "confidence_tier": "Low",
-      "confidence_grade": "C"
+      "game": "Dallas Wings @ Golden State Valkyries",
+      "favorite": "Golden State Valkyries ML",
+      "win_probability": 76.5,
+      "confidence_tier": "Medium",
+      "confidence_grade": "B"
     }
   ],
   "props": [],
