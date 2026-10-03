@@ -1,17 +1,8 @@
 {
-  "date": "2026-10-02",
-  "generated_at": "2026-10-02T20:11:48.166358+00:00",
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T18:51:17.982603+00:00",
   "locks": [],
-  "projections": [
-    {
-      "sport": "wnba",
-      "game": "Dallas Wings @ Golden State Valkyries",
-      "favorite": "Golden State Valkyries ML",
-      "win_probability": 76.5,
-      "confidence_tier": "Medium",
-      "confidence_grade": "B"
-    }
-  ],
+  "projections": [],
   "props": [],
   "parlay_eligible": false
 }
