@@ -1,8 +1,17 @@
 {
-  "date": "2026-10-03",
-  "generated_at": "2026-10-03T18:51:17.982603+00:00",
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T18:50:33.732814+00:00",
   "locks": [],
-  "projections": [],
+  "projections": [
+    {
+      "sport": "wnba",
+      "game": "Las Vegas Aces @ Golden State Valkyries",
+      "favorite": "Golden State Valkyries ML",
+      "win_probability": 76.5,
+      "confidence_tier": "Medium",
+      "confidence_grade": "B"
+    }
+  ],
   "props": [],
   "parlay_eligible": false
 }
