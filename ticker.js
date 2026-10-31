@@ -14,7 +14,7 @@
 
 const CP_TICKER_LEAGUES = [
   { sport: "baseball", league: "mlb", label: "MLB", active: true },
-  { sport: "basketball", league: "wnba", label: "WNBA", active: false },
+  { sport: "basketball", league: "wnba", label: "WNBA", active: true },
 ];
 
 // ESPN scoreboard season.type: 1 preseason, 2 regular season, 3 postseason, 4 offseason.
