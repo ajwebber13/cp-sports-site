@@ -13,9 +13,12 @@
  */
 
 const CP_TICKER_LEAGUES = [
-  { sport: "baseball", league: "mlb", label: "MLB" },
-  { sport: "basketball", league: "wnba", label: "WNBA" },
+  { sport: "baseball", league: "mlb", label: "MLB", active: true },
+  { sport: "basketball", league: "wnba", label: "WNBA", active: false },
 ];
+
+// ESPN scoreboard season.type: 1 preseason, 2 regular season, 3 postseason, 4 offseason.
+const CP_TICKER_OFFSEASON_TYPE = 4;
 
 const CP_TICKER_REFRESH_MS = 60000;
 
@@ -40,6 +43,8 @@ function cpLocalMidnight(date) {
 }
 
 function cpParseScoreboard(json, leagueLabel) {
+  if (json.season && json.season.type === CP_TICKER_OFFSEASON_TYPE) return [];
+
   const events = json.events || [];
   const todayLocal = cpLocalMidnight(new Date());
 
@@ -79,7 +84,7 @@ function cpParseScoreboard(json, leagueLabel) {
 
 async function cpFetchTickerItems() {
   const results = await Promise.allSettled(
-    CP_TICKER_LEAGUES.map((l) =>
+    CP_TICKER_LEAGUES.filter((l) => l.active).map((l) =>
       fetch(`https://site.api.espn.com/apis/site/v2/sports/${l.sport}/${l.league}/scoreboard`)
         .then((r) => r.json())
         .then((json) => cpParseScoreboard(json, l.label))
