@@ -32,28 +32,49 @@ function cpFormatGameStatus(status) {
   return status.type.shortDetail || `${status.period}`;
 }
 
+const CP_TICKER_DAY_MS = 24 * 60 * 60 * 1000;
+
+// Local-midnight timestamp for a Date, so day comparisons ignore time-of-day/timezone drift.
+function cpLocalMidnight(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+}
+
 function cpParseScoreboard(json, leagueLabel) {
   const events = json.events || [];
-  if (events.length === 0) {
-    // No real games for this league right now (off-season or no slate today) — hide it.
-    return [];
-  }
-  return events.map((event) => {
+  const todayLocal = cpLocalMidnight(new Date());
+
+  const items = [];
+  events.forEach((event) => {
+    const eventDate = new Date(event.date);
+    if (isNaN(eventDate)) return;
+    // ESPN sometimes keeps stale/placeholder events around (e.g. after a season ends) —
+    // only show games within a day of today, local time.
+    if (Math.abs(cpLocalMidnight(eventDate) - todayLocal) > CP_TICKER_DAY_MS) return;
+
     const comp = event.competitions[0];
     const home = comp.competitors.find((c) => c.homeAway === "home");
     const away = comp.competitors.find((c) => c.homeAway === "away");
     const status = comp.status || event.status;
-    return {
+    const state = status.type.state; // "pre" | "in" | "post"
+    const awayScore = Number(away.score) || 0;
+    const homeScore = Number(home.score) || 0;
+
+    // A 0-0 "in progress"/"final" game is stale/bogus data, not a real result — skip it.
+    // 0-0 is only legitimate for a game that hasn't started yet ("pre").
+    if (awayScore === 0 && homeScore === 0 && state !== "pre") return;
+
+    items.push({
       league: leagueLabel,
-      isLive: status.type.state === "in",
-      isFinal: status.type.state === "post",
+      isLive: state === "in",
+      isFinal: state === "post",
       awayAbbr: away.team.abbreviation,
       awayScore: away.score,
       homeAbbr: home.team.abbreviation,
       homeScore: home.score,
       statusText: cpFormatGameStatus(status),
-    };
+    });
   });
+  return items;
 }
 
 async function cpFetchTickerItems() {
