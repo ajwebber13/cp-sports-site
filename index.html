@@ -48,7 +48,7 @@
     <p class="hero-dna">Where culture, competition, and data collide.</p>
     <p class="hero-sports-line">Covering <span>NFL · NBA · WNBA · College Football · College Basketball · MLB</span></p>
     <div class="hero-ctas">
-      <a href="#research" class="btn btn-primary">View Today's Intelligence</a>
+      <a href="#research" class="btn btn-primary">Read the Research</a>
       <a href="#rankings" class="btn btn-ghost">Explore Rankings</a>
     </div>
   </section>
@@ -61,18 +61,6 @@
         <li><span class="pulse-tag">📊 Model Pulse</span> A'ja Wilson averaging 29.4 PPG across her last five outings.</li>
         <li><span class="pulse-tag">🏛 Culture Pulse</span> Early HBCU camp buzz: a top-10 preseason projection is taking shape in the SWAC.</li>
       </ul>
-    </div>
-  </section>
-
-  <section id="todays-intel">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="section-title">Today's <span class="gold">Intelligence</span></h2>
-        <span class="page-meta" id="intelGeneratedAt"></span>
-      </div>
-      <div id="todaysIntelBody">
-        <div class="intel-empty">Loading today's intelligence…</div>
-      </div>
     </div>
   </section>
 
@@ -121,8 +109,7 @@
               <span class="ring-label">Confidence</span>
             </div>
           </div>
-          <p class="ring-caption">Model Edge<br>Liberty −5</p>
-          <span class="edge-pill">+6.4% Edge</span>
+          <p class="ring-caption">Model Lean<br>Liberty</p>
         </div>
       </div>
     </div>
@@ -141,7 +128,7 @@
           <p class="pillar-icon">02 / PLAY</p>
           <h3>Predictions</h3>
           <p>Win probabilities and spreads built from the same engine that powers the rankings — with the reasoning shown, not hidden.</p>
-          <a href="#" class="pillar-link">Today's picks →</a>
+          <a href="#" class="pillar-link">See predictions →</a>
         </div>
         <div class="pillar">
           <p class="pillar-icon">03 / PROPS</p>
@@ -215,30 +202,13 @@
         <h2 class="section-title">Choose a <span class="gold">Sport</span></h2>
       </div>
       <div class="sport-grid">
-        <a class="sport-tile" href="wnba.html"><div class="abbr">WNBA</div><div class="full">Women's Basketball</div><div class="status live">● In Season</div></a>
-        <a class="sport-tile" href="#"><div class="abbr">NBA</div><div class="full">Basketball</div><div class="status">Offseason</div></a>
-        <a class="sport-tile" href="#"><div class="abbr">NFL</div><div class="full">Football</div><div class="status">Preseason Soon</div></a>
-        <a class="sport-tile" href="#"><div class="abbr">CFB</div><div class="full">College Football</div><div class="status">Preseason Soon</div></a>
-        <a class="sport-tile" href="#"><div class="abbr">CBB</div><div class="full">College Basketball</div><div class="status">Offseason</div></a>
-        <a class="sport-tile" href="#"><div class="abbr">MLB</div><div class="full">Baseball</div><div class="status live">● In Season</div></a>
+        <a class="sport-tile" href="wnba.html"><div class="abbr">WNBA</div><div class="full">Women's Basketball</div><div class="status live">● Hub Live</div></a>
+        <a class="sport-tile" href="mlb.html"><div class="abbr">MLB</div><div class="full">Baseball</div><div class="status live">● Hub Live</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">NBA</div><div class="full">Basketball</div><div class="status">Coming Soon</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">NFL</div><div class="full">Football</div><div class="status">Coming Soon</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">CFB</div><div class="full">College Football</div><div class="status">Coming Soon</div></a>
+        <a class="sport-tile" href="#"><div class="abbr">CBB</div><div class="full">College Basketball</div><div class="status">Coming Soon</div></a>
       </div>
-    </div>
-  </section>
-
-  <section id="performance">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="section-title">Model <span class="gold">Performance</span></h2>
-        <a href="#" class="section-link">Full Accuracy Report →</a>
-      </div>
-      <p class="perf-caveat" id="perfCaveat">Loading model performance…</p>
-      <div class="perf-strip" id="perfStrip">
-        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Overall Record</div></div>
-        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Win Rate</div></div>
-        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">ROI</div></div>
-        <div class="perf-cell"><div class="perf-num">—</div><div class="perf-label">Graded Picks</div></div>
-      </div>
-      <div class="perf-by-sport" id="perfBySport"></div>
     </div>
   </section>
 
@@ -301,14 +271,13 @@
       <div class="footer-col">
         <h4>Culture & Pulse</h4>
         <a href="#">Media Site</a>
-        <a href="#">Telegram</a>
         <a href="#">About</a>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Culture & Pulse Sports Intelligence</span>
-    <span>Data for entertainment purposes. Not financial or betting advice.</span>
+    <span>Sports data and research for fans.</span>
   </div>
 </footer>
 
@@ -331,128 +300,6 @@
       });
     });
   }
-
-  // Model Performance — real numbers from publish_performance_summary.py
-  // (performance_tracker.py's actual queries against results/predictions).
-  // Deliberately does NOT render confidence_calibration on the public
-  // card, even though it's in the JSON — that breakdown currently shows
-  // an unresolved model-calibration issue (higher-stated-confidence picks
-  // performing worse than lower-confidence ones), and publishing that
-  // undercuts the "trust the reasoning" pitch this whole site is built
-  // on. Revisit once that's actually fixed. See performance_tracker.py's
-  // own notes on the same issue.
-  fetch('data/performance-summary.json')
-    .then(res => { if (!res.ok) throw new Error('Performance data not found (' + res.status + ')'); return res.json(); })
-    .then(data => {
-      document.getElementById('perfCaveat').textContent =
-        `Real model performance, updated ${data.updated} — Model ${data.model_version}`;
-
-      const strip = document.getElementById('perfStrip');
-      strip.innerHTML = `
-        <div class="perf-cell"><div class="perf-num">${data.overall.record.value}</div><div class="perf-label">Overall Record</div></div>
-        <div class="perf-cell"><div class="perf-num">${data.overall.win_rate_pct.value}%</div><div class="perf-label">Win Rate</div></div>
-        <div class="perf-cell"><div class="perf-num">${data.roi.roi_pct.value >= 0 ? '+' : ''}${data.roi.roi_pct.value}%</div><div class="perf-label">ROI</div></div>
-        <div class="perf-cell"><div class="perf-num">${data.overall.total_graded.value}</div><div class="perf-label">Graded Picks</div></div>
-      `;
-
-      const bySport = document.getElementById('perfBySport');
-      bySport.innerHTML = data.by_sport.map(s => `
-        <div class="perf-sport-pill">
-          <span class="perf-sport-name">${s.sport.toUpperCase()}</span>
-          <span class="perf-sport-record">${s.record.value}</span>
-          <span class="perf-sport-rate">${s.win_rate_pct.value}%</span>
-        </div>
-      `).join('');
-    })
-    .catch(err => {
-      document.getElementById('perfCaveat').textContent = `Couldn't load performance data — ${err.message}`;
-      console.error(err);
-    });
-
-  // Today's Intelligence — real Locks/Projections/Props from
-  // pick_of_the_day.py's daily-intelligence.json export (auto-pushed
-  // nightly, same file Telegram sends from). Renders whatever's
-  // actually there — zero, one, or several of each — never pads with
-  // placeholder picks on a quiet day.
-  fetch('data/daily-intelligence.json')
-    .then(res => { if (!res.ok) throw new Error('Daily intelligence not found (' + res.status + ')'); return res.json(); })
-    .then(data => {
-      const genDate = new Date(data.generated_at);
-      document.getElementById('intelGeneratedAt').textContent =
-        `Generated ${genDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} · ${data.date}`;
-
-      const tierClass = t => (t || '').toLowerCase();
-      let html = '';
-
-      data.locks.forEach(lock => {
-        const [away, home] = lock.game.split(/\s+@\s+/);
-        html += `
-          <div class="intel-card">
-            <p class="intel-card-tag lock">🔒 C&amp;P Lock · ${lock.sport.toUpperCase()}</p>
-            <div class="intel-row">
-              ${renderTeamBadge(away, 36)}
-              <div class="intel-row-info">
-                <div class="intel-matchup">${lock.game}</div>
-                <div class="intel-sub">${lock.pick} (${lock.odds})</div>
-              </div>
-              <span class="intel-tier ${tierClass(lock.confidence_tier)}">${lock.confidence_tier}</span>
-            </div>
-            <div class="intel-stat-row">
-              <span>Confidence: <b>${lock.confidence}%</b></span>
-              <span>Edge: <b>+${lock.edge_pct}%</b></span>
-            </div>
-          </div>`;
-      });
-
-      data.projections.forEach(proj => {
-        const [away, home] = proj.game.split(/\s+@\s+/);
-        html += `
-          <div class="intel-card">
-            <p class="intel-card-tag projection">🎯 Model Projection · ${proj.sport.toUpperCase()}</p>
-            <div class="intel-row">
-              ${renderTeamBadge(away, 36)}
-              <div class="intel-row-info">
-                <div class="intel-matchup">${proj.game}</div>
-                <div class="intel-sub">Model favors: ${proj.favorite}</div>
-              </div>
-              <span class="intel-tier ${tierClass(proj.confidence_tier)}">${proj.confidence_tier}</span>
-            </div>
-            <div class="intel-stat-row">
-              <span>Win Probability: <b>${proj.win_probability}%</b></span>
-            </div>
-            <p class="intel-caveat-line">No qualifying betting edge today — projection only, not a Lock.</p>
-          </div>`;
-      });
-
-      data.props.forEach(prop => {
-        html += `
-          <div class="intel-card">
-            <p class="intel-card-tag prop">🎯 Prop of the Day · ${prop.sport.toUpperCase()}</p>
-            <div class="intel-row">
-              ${renderPlayerBadge(prop.player, 36)}
-              <div class="intel-row-info">
-                <div class="intel-matchup">${prop.player}</div>
-                <div class="intel-sub">${prop.side} ${prop.stat} ${prop.line}</div>
-              </div>
-              <span class="intel-tier ${tierClass(prop.confidence_tier)}">${prop.confidence_tier}</span>
-            </div>
-            <div class="intel-stat-row">
-              <span>Historical Hit Rate: <b>${prop.historical_hit_rate_pct}%</b> (${prop.games_sampled} games)</span>
-            </div>
-          </div>`;
-      });
-
-      if (!html) {
-        html = '<div class="intel-empty">Nothing cleared the confidence bar today — check back tomorrow.</div>';
-      }
-
-      document.getElementById('todaysIntelBody').innerHTML = html;
-    })
-    .catch(err => {
-      document.getElementById('todaysIntelBody').innerHTML =
-        `<div class="intel-empty">Couldn't load today's intelligence — ${err.message}</div>`;
-      console.error(err);
-    });
 
   // Inject badges into the static Power Rankings preview rows (these
   // 5 rows are hand-typed HTML, not JSON-rendered, so badges get
