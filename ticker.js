@@ -35,7 +35,8 @@ function cpFormatGameStatus(status) {
 function cpParseScoreboard(json, leagueLabel) {
   const events = json.events || [];
   if (events.length === 0) {
-    return [{ league: leagueLabel, empty: true }];
+    // No real games for this league right now (off-season or no slate today) — hide it.
+    return [];
   }
   return events.map((event) => {
     const comp = event.competitions[0];
@@ -72,9 +73,6 @@ async function cpFetchTickerItems() {
 }
 
 function cpRenderTickerItem(item) {
-  if (item.empty) {
-    return `<span class="cp-ticker-item"><span class="cp-ticker-league">${item.league}</span> No games today</span>`;
-  }
   const liveDot = item.isLive ? `<span class="cp-ticker-live-dot">●</span> LIVE` : "";
   const statusClass = item.isLive ? "cp-ticker-status-live" : item.isFinal ? "cp-ticker-status-final" : "cp-ticker-status-pre";
   return `
@@ -91,6 +89,12 @@ async function cpRenderTicker() {
   if (!container) return;
 
   const items = await cpFetchTickerItems();
+  if (items.length === 0) {
+    container.innerHTML = "";
+    container.style.display = "none";
+    return;
+  }
+  container.style.display = "";
   const html = items.map(cpRenderTickerItem).join('<span class="cp-ticker-sep">•</span>');
 
   // Duplicate content so the CSS marquee loop has no visible seam
